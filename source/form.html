@@ -63,23 +63,68 @@
         </form>
       </section>
 
-      <section class="form-page form-contacts">
+      <section class="form-contacts">
         <h2 class="form-contacts__data form-contacts__data--greenline">Контактные данные (владельца кота)</h2>
         <form class="form-contacts__catowner" method="post" action="https://echo.htmlacademy.ru.">
-          <p>
-            <label class="visually-hidden" for="email-login">E-mail:<sup>*</sup></label>
-            <input class="form-contacts__email" id="email-login" type="email" name="email" placeholder="kuklachev@gmail.com">
-          </p>
-          <p>
-            <label class="visually-hidden" for="tel">Телефон:<sup>*</sup></label>
-            <input class="form-contacts__tel" id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90">
-          </p>
+          <div class="form-contacts__wrapper">
+            <p>
+              <label class="visually-hidden" for="email-login">E-mail:<sup>*</sup></label>
+              <input class="form-contacts__email" id="email-login" type="email" name="email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p>
+              <label class="visually-hidden" for="tel">Телефон:<sup>*</sup></label>
+              <input class="form-contacts__tel" id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90">
+            </p>
+          </div>
         </form>
-
       </section>
 
+      <section class="form-comments">
+        <h2 class="form-comments__text form-comments__text--greenline">Комментарий</h2>
+        <form class="form-comments__description" method="post" action="https://echo.htmlacademy.ru.">
+          <p>
+            <label class="form-comments__label" for="textarea"></label>
+            <textarea class="form-comments__textarea" id="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
+        </form>
+      </section>
 
+      <section class="additionally">
+        <h2 class="additionally__text additionally__text--greenline">Дополнительно</h2>
+        <form class="additionally__form additionally-list" method="post" action="https://echo.htmlacademy.ru.">
+          <ul class="additionally__list">
+            <li class="additionally__item">
+              <input class="visually-hidden" id="sugarfree" name="sugarfee" type="checkbox" checked aria-label="Сахарозаменитель">
+              <label for="sugarfree">Сахарозаменитель</label>
+            </li>
+            <li class="additionally__item">
+              <input class="visually-hidden" id="water" name="water" type="checkbox" aria-label="Питьевая вода">
+              <label for="water">Питьевая вода</label>
+            </li>
+            <li class="additionally__item">
+              <input class="visually-hidden" id="milk" name="milk" type="checkbox" aria-label="Молоко">
+              <label for="water">Молоко</label>
+            </li>
+            <li class="additionally__item">
+              <input class="visually-hidden" id="vitamins" name="vitamins" type="checkbox" aria-label="Витамины">
+              <label for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </form>
+      </section>
 
+      <section class="send-message">
+        <div class="send-message__wrapper">
+          <p class="send-message__item">
+            <a class="send-message__button button" href="">Отправить заявку</a>
+          </p>
+          <p class="send-message__small">
+            <small class="send-message__legend sens-message__legend--top">
+              <sup>*</sup> — Обязательные поля
+            </small>
+          </p>
+        </div>
+      </section>
 
       <section class="map">
         <div class="map__container">
