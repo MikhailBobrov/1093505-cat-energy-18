@@ -27,18 +27,20 @@
       <section class="form-page__wrapper">
         <form class="form-page__form form-list" method="post" action="https://echo.htmlacademy.ru.">
           <div class="form-list__wrapper">
-            <p class="form-list__point">
-              <label class="form-list__label" for="login-field">Имя:<sup>*</sup></label>
-              <input class="form-list__input" type="text" name="login" id="login-field" value="" placeholder="Барсик">
-            </p>
-            <p class="form-list__point">
-              <label class="form-list__label" for="login-kilo">Вес (кг):<sup>*</sup></label>
-              <input class="form-list__input" type="text" name="kilo" id="login-kilo" value="" placeholder="7">
-            </p>
-            <p class="form-list__point">
-              <label class="form-list__label" for="login-age">Возраст (лет):</label>
-              <input class="form-list__input" type="text" name="age" id="login-age" value="" placeholder="7">
-            </p>
+            <ul class="form-list__item">
+              <li class="form-list__point">
+                <label class="form-list__label" for="login-field">Имя:<sup>*</sup></label>
+                <input class="form-list__input" type="text" name="login" id="login-field" value="" placeholder="Барсик" required>
+              </li>
+              <li class="form-list__point">
+                <label class="form-list__label" for="login-kilo">Вес (кг):<sup>*</sup></label>
+                <input class="form-list__input" type="text" name="kilo" id="login-kilo" value="" placeholder="7" required>
+              </li>
+              <li class="form-list__point">
+                <label class="form-list__label" for="login-age">Возраст (лет):</label>
+                <input class="form-list__input" type="text" name="age" id="login-age" value="" placeholder="7">
+              </li>
+            </ul>
           </div>
 
           <div class="form-list__cover form-radio">
@@ -60,70 +62,66 @@
               </ul>
             </fieldset>
           </div>
-        </form>
-      </section>
 
-      <section class="form-contacts">
-        <h2 class="form-contacts__data form-contacts__data--greenline">Контактные данные (владельца кота)</h2>
-        <form class="form-contacts__catowner" method="post" action="https://echo.htmlacademy.ru.">
-          <div class="form-contacts__wrapper">
-            <p>
-              <label class="visually-hidden" for="email-login">E-mail:<sup>*</sup></label>
-              <input class="form-contacts__email" id="email-login" type="email" name="email" placeholder="kuklachev@gmail.com">
-            </p>
-            <p>
-              <label class="visually-hidden" for="tel">Телефон:<sup>*</sup></label>
-              <input class="form-contacts__tel" id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90">
-            </p>
+          <div class="form-list__contacts form-contacts">
+            <fieldset class="form-contacts__list">
+              <legend class="form-contacts__data form-contacts__data--greenline">Контактные данные (владельца кота)</legend>
+                <ul class="form-contacts__wrapper">
+                  <li>
+                    <label class="visually-hidden" for="email-login">E-mail:<sup>*</sup></label>
+                    <input class="form-contacts__email" id="email-login" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  </li>
+                  <li>
+                    <label class="visually-hidden" for="tel">Телефон:<sup>*</sup></label>
+                    <input class="form-contacts__tel" id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90" required>
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
+
+          <div class="form-list__comments form-comments">
+            <p class="form-comments__text form-comments__text--greenline">Комментарий</p>
+              <label class="form-comments__label" for="textarea"></label>
+              <textarea class="form-comments__textarea" id="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+
+          <div class="form-list__additionally additionally">
+            <fieldset class="additionally__wrapper">
+              <legend class="additionally__text additionally__text--greenline">Дополнительно</legend>
+                <ul class="additionally__list">
+                  <li class="additionally__item">
+                    <input class="visually-hidden" id="sugarfree" name="sugarfee" type="checkbox" checked aria-label="Сахарозаменитель">
+                    <label for="sugarfree">Сахарозаменитель</label>
+                  </li>
+                  <li class="additionally__item">
+                    <input class="visually-hidden" id="water" name="water" type="checkbox" aria-label="Питьевая вода">
+                    <label for="water">Питьевая вода</label>
+                  </li>
+                  <li class="additionally__item">
+                    <input class="visually-hidden" id="milk" name="milk" type="checkbox" aria-label="Молоко">
+                    <label for="water">Молоко</label>
+                  </li>
+                  <li class="additionally__item">
+                    <input class="visually-hidden" id="vitamins" name="vitamins" type="checkbox" aria-label="Витамины">
+                    <label for="vitamins">Витамины</label>
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
+
+          <div class="form-list__message send-message">
+            <div class="send-message__wrapper">
+              <p class="send-message__item">
+                <a class="send-message__button button" href="">Отправить заявку</a>
+              </p>
+              <p class="send-message__small">
+                <small class="send-message__legend send-message__legend--top">
+                  <sup>*</sup> — Обязательные поля
+                </small>
+              </p>
+            </div>
           </div>
         </form>
-      </section>
-
-      <section class="form-comments">
-        <h2 class="form-comments__text form-comments__text--greenline">Комментарий</h2>
-        <form class="form-comments__description" method="post" action="https://echo.htmlacademy.ru.">
-          <p>
-            <label class="form-comments__label" for="textarea"></label>
-            <textarea class="form-comments__textarea" id="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </p>
-        </form>
-      </section>
-
-      <section class="additionally">
-        <h2 class="additionally__text additionally__text--greenline">Дополнительно</h2>
-        <form class="additionally__form additionally-list" method="post" action="https://echo.htmlacademy.ru.">
-          <ul class="additionally__list">
-            <li class="additionally__item">
-              <input class="visually-hidden" id="sugarfree" name="sugarfee" type="checkbox" checked aria-label="Сахарозаменитель">
-              <label for="sugarfree">Сахарозаменитель</label>
-            </li>
-            <li class="additionally__item">
-              <input class="visually-hidden" id="water" name="water" type="checkbox" aria-label="Питьевая вода">
-              <label for="water">Питьевая вода</label>
-            </li>
-            <li class="additionally__item">
-              <input class="visually-hidden" id="milk" name="milk" type="checkbox" aria-label="Молоко">
-              <label for="water">Молоко</label>
-            </li>
-            <li class="additionally__item">
-              <input class="visually-hidden" id="vitamins" name="vitamins" type="checkbox" aria-label="Витамины">
-              <label for="vitamins">Витамины</label>
-            </li>
-          </ul>
-        </form>
-      </section>
-
-      <section class="send-message">
-        <div class="send-message__wrapper">
-          <p class="send-message__item">
-            <a class="send-message__button button" href="">Отправить заявку</a>
-          </p>
-          <p class="send-message__small">
-            <small class="send-message__legend sens-message__legend--top">
-              <sup>*</sup> — Обязательные поля
-            </small>
-          </p>
-        </div>
       </section>
 
       <section class="map">
