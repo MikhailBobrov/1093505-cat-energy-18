@@ -1,0 +1,15 @@
+.advantages__headline {
+  color: $link-color;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.advantages__list {
+  width: 176px;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  @include reset;
+}
