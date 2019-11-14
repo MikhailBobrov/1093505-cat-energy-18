@@ -10,12 +10,12 @@
 }
 
 .advantages__list {
+  @include reset;
   width: 176px;
   color: #444444;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  @include reset;
 }
 
 .advantages__item {

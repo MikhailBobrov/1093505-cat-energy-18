@@ -4,6 +4,7 @@
 }
 
 .site-list__item {
+  @include reset;
   padding-bottom: 45px;
   color: $link-color;
   font-family: inherit;
@@ -11,7 +12,6 @@
   font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
-  @include reset;
 }
 
 .main-nav__list {
