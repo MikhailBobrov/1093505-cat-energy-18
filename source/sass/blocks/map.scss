@@ -1,0 +1,26 @@
+.map {
+  padding-top: 0;
+  width: 1345px;
+  height: 645px;
+  outline: 2px dotted dodgerblue;
+}
+
+.map__slogan {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.map__adress {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.map__container {
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  width: 1345px;
+  height: 645px;
+}

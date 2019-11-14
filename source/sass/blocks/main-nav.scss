@@ -1,0 +1,19 @@
+.main-nav__wrapper {
+  background-color: $fancy-color;
+  outline: 2px dotted dodgerblue;
+}
+
+.site-list__item {
+  @include reset;
+  padding-bottom: 45px;
+  color: $link-color;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  margin-bottom: 1px;
+}

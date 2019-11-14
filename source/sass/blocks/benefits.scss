@@ -1,0 +1,47 @@
+.benefits__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.benefits-list__item {
+  @include reset;
+}
+
+.benefits-row__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.benefits-row__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.benefits-row__price {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.benefits-row__button {
+  @include button;
+}
+
+.benefits-call__items {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  width: 320px;
+  min-height: 305px;
+}
+
+.benefits-call__subtitle {
+  width: 159px;
+  text-align: center;
+  color: $fancy-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
