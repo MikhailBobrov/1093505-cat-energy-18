@@ -4,6 +4,7 @@
 }
 
 .site-list__item {
+  padding-bottom: 45px;
   color: $link-color;
   font-family: inherit;
   font-size: 20px;
@@ -11,4 +12,8 @@
   line-height: 20px;
   text-transform: uppercase;
   @include reset;
+}
+
+.main-nav__list {
+  margin-bottom: 1px;
 }

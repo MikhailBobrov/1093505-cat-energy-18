@@ -1,0 +1,57 @@
+.catalog-page__title {
+  color: $link-color;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.catalog-items__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-items__list {
+  @include reset;
+}
+
+.catalog-items__item {
+  padding-bottom: 25px;
+}
+
+.catalog-items__left {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.catalog-items__right {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.catalog-items__button {
+  @include button;
+  margin-top: 25px;
+}
+
+.catalog-items__lead {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-items__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.catalog-items__dropdown {
+  @include button;
+  color: $link-color;
+  background-color: #f2f2f2;
+}

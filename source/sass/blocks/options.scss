@@ -1,3 +1,7 @@
+.options {
+  outline: 2px dotted darkred;
+}
+
 .options__title {
   color: $link-color;
   font-size: 24px;
@@ -20,6 +24,7 @@
 }
 
 .options__descriptions {
+  width: 223px;
   color: #444444;
   font-size: 14px;
   font-weight: 400;
@@ -27,15 +32,40 @@
 }
 
 .options__slim--slim {
+  position: relative;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
 }
 
+.catalog-slim::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 100px;
+  width: 25px;
+  height: 20px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  }
+
+
 .options__pro--pro {
+  position: relative;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+.catalog-pro::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 100px;
+  width: 25px;
+  height: 20px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
 }

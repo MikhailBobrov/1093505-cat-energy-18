@@ -1,3 +1,6 @@
+.main-title {
+  outline: 2px dotted dodgerblue;
+}
 
 .main-title__wrapper {
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -26,10 +29,6 @@
 }
 
 .main-title__caption {
-    background-image: url("../img/index-can-mobile@1x.png");
-    background-repeat: no-repeat;
-    width: 280px;
-    height: 270px;
     margin-bottom: 3px;
 }
 
