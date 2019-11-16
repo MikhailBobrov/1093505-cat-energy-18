@@ -2,25 +2,52 @@
   outline: 2px dotted darkred;
 }
 
+.options__slim {
+  padding-top: 39px;
+  min-height: 266px;
+  margin-bottom: 20px;
+}
+
+.options__pro {
+  padding-top: 39px;
+  min-height: 266px;
+  margin-bottom: 32px;
+}
+
 .options__title {
+  position: relative;
+  padding-left: 92px;
   color: $link-color;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
+.options__title::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  width: 50px;
+  height: 51px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
 .options__feed {
   width: 50px;
   height: 51px;
   background-color: #68b738;
-  border-radius: 40px 40px 40px 40px;
+  //не понимаю почему картинка не работает
+  background-image: url("..img/icon-cat-slim.svg");
+  border-radius: 50%;
 }
 
 .options__mass {
   width: 50px;
   height: 51px;
   background-color: #68b738;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 50%;
 }
 
 .options__descriptions {
@@ -29,6 +56,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  font-family: "Arial", sans-serif;//текст не работает
 }
 
 .options__slim--slim {

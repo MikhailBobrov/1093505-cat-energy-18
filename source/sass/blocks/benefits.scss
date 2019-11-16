@@ -27,10 +27,6 @@
   line-height: 14px;
 }
 
-.benefits-row__button {
-  @include button;
-}
-
 .benefits-call__items {
   background-image: url("../img/index-background-mobile@1x.jpg");
   width: 320px;

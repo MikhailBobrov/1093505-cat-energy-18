@@ -33,7 +33,6 @@
 }
 
 .catalog-items__button {
-  @include button;
   margin-top: 25px;
 }
 
@@ -51,7 +50,6 @@
 }
 
 .catalog-items__dropdown {
-  @include button;
   color: $link-color;
   background-color: #f2f2f2;
 }
