@@ -2,20 +2,29 @@
   outline: 2px dotted darkred;
 }
 
+.options__wrapper {
+  margin-top: 22px;
+  margin-bottom: 32px;
+}
+
 .options__slim {
-  padding-top: 39px;
+  width: 280px;
   min-height: 266px;
+  padding-top: 24px;
   margin-bottom: 20px;
+  background-color: #f2f2f2;
 }
 
 .options__pro {
-  padding-top: 39px;
+  width: 280px;
   min-height: 266px;
-  margin-bottom: 32px;
+  padding-top: 24px;
+  background-color: #f2f2f2;
 }
 
 .options__title {
   position: relative;
+  margin: 0;
   padding-left: 92px;
   color: $link-color;
   font-size: 24px;
@@ -34,12 +43,23 @@
   border-radius: 50%;
 }
 
+/*
+.options__title::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  width: 50px;
+  height: 51px;
+  background-image: url("..img/icon-cat-slim.svg");
+}
+
 .options__feed {
   width: 50px;
   height: 51px;
   background-color: #68b738;
   //не понимаю почему картинка не работает
-  background-image: url("..img/icon-cat-slim.svg");
+  background-image: url("../img/icon-cat-slim.svg");
   border-radius: 50%;
 }
 
@@ -50,47 +70,66 @@
   border-radius: 50%;
 }
 
+ */
+
 .options__descriptions {
-  width: 223px;
+  position: relative;
+  padding-top: 24px;
+  padding-left: 21px;
+  padding-right: 36px;
+  padding-bottom: 24px;
   color: #444444;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  font-family: "Arial", sans-serif;//текст не работает
+  font-family: "Arial", sans-serif;
 }
 
-.options__slim--slim {
+.options__descriptions::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 17px;
+  width: 240px;
+  height: 1px;
+  opacity: 0.1;
+  background-color: $link-color;
+}
+
+.options__catalog {
   position: relative;
+  padding-left: 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
 }
 
-.catalog-slim::after {
+.options__catalog--slim::after {
   content: "";
   position: absolute;
   top: 6px;
-  left: 100px;
+  left: 118px;
   width: 25px;
   height: 20px;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 }
 
-.options__pro--pro {
+.options__catalogpro {
   position: relative;
+  padding-left: 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
 }
 
-.catalog-pro::after {
+.options__catalogpro--pro::after {
   content: "";
   position: absolute;
   top: 6px;
-  left: 100px;
+  left: 118px;
   width: 25px;
   height: 20px;
   background-image: url("../img/icon-right-arrow-long.svg");

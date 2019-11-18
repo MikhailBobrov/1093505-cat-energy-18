@@ -1,7 +1,19 @@
-.page-footer {
-  outline: 2px dotted dodgerblue;
+.page-footer__wrapper {
+  width: 320px;
+  min-height: 235px;
+  padding-top: 30px;
+  background-color: #f2f2f2;
 }
 
-.copyright__image {
-  background-image: url("../img/htmlacademy.svg");
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-left: 35%;
 }
+
+/*
+.page-footer__copyright {
+  margin-top:
+}
+
+ */

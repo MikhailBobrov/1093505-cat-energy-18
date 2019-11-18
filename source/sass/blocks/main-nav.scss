@@ -1,7 +1,22 @@
-.main-nav__wrapper {
-  background-color: $fancy-color;
-  outline: 2px dotted blueviolet;
+.main-nav {
+  min-height: 262px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    /* Временно для сетки */
+    min-height: 60px;
+  }
+}
+
+/*
+.main-nav__logo {
+  height: 38px;
+  background-image: url("../img/logo-mobile.svg");
+}
+
+ */
+
 
 .site-list__item {
   @include reset;
