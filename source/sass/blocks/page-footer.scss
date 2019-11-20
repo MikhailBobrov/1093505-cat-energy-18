@@ -1,14 +1,14 @@
-.page-footer__wrapper {
-  width: 320px;
-  min-height: 235px;
-  padding-top: 30px;
+.page-footer {
   background-color: #f2f2f2;
 }
 
-.page-footer__logo {
-  display: inline-block;
+.page-footer__wrapper {
+  box-sizing: border-box;
+}
+
+.page-footer__logo-image {
+  padding-top: 30px;
   margin-bottom: 30px;
-  margin-left: 35%;
 }
 
 /*
