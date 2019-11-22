@@ -21,6 +21,32 @@
   align-items: baseline;
 }
 
+.form-contacts__point--email {
+  position: relative;
+}
+
+.form-contacts__svg1 {
+  content: "";
+  position: absolute;
+  right: 12px;
+  bottom: 34px;
+  width: 17px;
+  height: 13px;
+}
+
+.form-contacts__point--tel {
+  position: relative;
+}
+
+.form-contacts__svg2 {
+  content: "";
+  position: absolute;
+  right: 8px;
+  bottom: 34px;
+  width: 20px;
+  height: 20px;
+}
+
 .form-contacts__label {
   color: #222222;
   font-size: 16px;
