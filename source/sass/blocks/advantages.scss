@@ -11,11 +11,7 @@
 
 .advantages__list {
   @include reset;
-  width: 176px;
-  color: #444444;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
+  margin: 0;
 }
 
 .advantages__item {
@@ -23,32 +19,87 @@
   padding-left: 70px;
 }
 
-.advantages__item::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  /* Style for "green back" */
+.advantages__description {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 220px;
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.advantages__item--sheet {
+  position: relative;
   width: 60px;
-  height: 60px;
+  min-height: 60px; //под вопросом у меня тут
   background-color: #68b738;
 }
 
-/*
-.advantages__item--sheet {
-  background-image: url("");
+.advantages__item--sheet::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;//если делать меньше, почему то он скрывается
+  height: 44px;
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
 }
 
 .advantages__item--powder {
+  position: relative;
+  width: 60px;
+  min-height: 60px;
+  background-color: #68b738;
+}
 
+.advantages__item--powder::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;//если делать меньше, почему то он скрывается
+  height: 44px;
+  background-image: url("../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
 }
 
 .advantages__item--eating {
+  position: relative;
+  width: 60px;
+  min-height: 60px;
+  background-color: #68b738;
+}
 
+.advantages__item--eating::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;//если делать меньше, почему то он скрывается
+  height: 44px;
+  background-image: url("../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
 }
 
 .advantages__item--time {
-
+  position: relative;
+  width: 60px;
+  min-height: 60px;
+  background-color: #68b738;
 }
 
- */
+.advantages__item--time::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;//если делать меньше, почему то он скрывается
+  height: 44px;
+  background-image: url("../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+}

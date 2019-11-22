@@ -1,5 +1,56 @@
 .social__list {
   @include reset;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/*тут я не пойму почему не появляется картинка и не скидываются стили*/
+.social__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  min-height: 1px;
+  opacity: 0.1;
+  background-color: $link-color;
+}
+
+.social__list::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 280px;
+  min-height: 1px;
+  opacity: 0.1;
+  background-color: $link-color;
+}
+
+.social__link--vkontakte {
+  margin-right: 45px;
+  width: 22px;
+  height: 12px;
+  background-image: url("../img/icon-vk.svg");
+  background-repeat: no-repeat;
+}
+
+.social__link--instagram {
+  margin-right: 45px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icon-insta.svg");
+  background-repeat: no-repeat;
+}
+
+.social__link--facebook {
+  width: 10px;
+  height: 19px;
+  background-image: url("../img/icon-fb.svg");
+  background-repeat: no-repeat;
+}
+
+.social__item {
+  margin-top: 25px;
+}

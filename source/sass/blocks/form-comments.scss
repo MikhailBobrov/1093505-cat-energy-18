@@ -1,0 +1,34 @@
+.form-comments__text {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form-comments__text--greenline::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: -20px;
+  width: 158px;
+  height: 3px;
+  background-color: #68b738;
+}
+
+.form-comments__textarea {
+  padding-top: 15px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-bottom: 30px;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 280px;
+  min-height: 150px;
+  border: 1px solid #cdcdcd;
+  opacity: 0.5;
+}
