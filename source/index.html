@@ -11,23 +11,21 @@
       <div class="page-header__container container">
         <nav class="page-header__navigation main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item">
+            <div class="main-nav__wrapper">
+              <div class="main-nav__list user-list">
                 <a class="user-list__logo">
                   <picture>
                     <source srcset="img/logo-mobile.svg" media="(max-width: 320px)" sizes="38">
                     <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="логотип Кэт-Энерджи">
                   </picture>
                 </a>
-              </li>
-            </ul>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-              <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-              <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
-            </ul>
-          </div>
+              </div>
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+                <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+                <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+              </ul>
+            </div>
         </nav>
       </div>
     </header>
@@ -96,7 +94,14 @@
 
         <div class="example__filter">
           <div class="example__image">
-            <img src="" width="" height="" aria-label="Фотография кота">
+            <ul class="example__list">
+              <li class="example__item example__item--before">
+                <span class="visually-hidden">Кот до</span>
+              </li>
+              <li class="example__item example__item--after">
+                <span class="visually-hidden">Кот после</span>
+              </li>
+            </ul>
           </div>
           <div class="example__controls">
             <form class="example__form" action="https://echo.htmlacademy.ru." method="post">

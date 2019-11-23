@@ -34,72 +34,72 @@
 
 .advantages__item--sheet {
   position: relative;
-  width: 60px;
-  min-height: 60px; //под вопросом у меня тут
-  background-color: #68b738;
 }
 
 .advantages__item--sheet::before {
   content: "";
   position: absolute;
   top: 10px;
-  left: 10px;
-  width: 40px;//если делать меньше, почему то он скрывается
-  height: 44px;
+  left: 0;
+  width: 60px;
+  height: 60px;
   background-image: url("../img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
+  background-color: #68b738;
+  background-size: 50px;
+  background-position: center;
 }
 
 .advantages__item--powder {
   position: relative;
-  width: 60px;
-  min-height: 60px;
-  background-color: #68b738;
 }
 
 .advantages__item--powder::before {
   content: "";
   position: absolute;
   top: 10px;
-  left: 10px;
-  width: 40px;//если делать меньше, почему то он скрывается
-  height: 44px;
+  left: 0;
+  width: 60px;
+  height: 60px;
   background-image: url("../img/advantage-powder@1x.png");
   background-repeat: no-repeat;
+  background-color: #68b738;
+  background-size: 50px;
+  background-position: center;
 }
 
 .advantages__item--eating {
   position: relative;
-  width: 60px;
-  min-height: 60px;
-  background-color: #68b738;
 }
 
 .advantages__item--eating::before {
   content: "";
   position: absolute;
   top: 10px;
-  left: 10px;
-  width: 40px;//если делать меньше, почему то он скрывается
-  height: 44px;
+  left: 0;
+  width: 60px;
+  height: 60px;
   background-image: url("../img/advantage-dining@1x.png");
   background-repeat: no-repeat;
+  background-color: #68b738;
+  background-size: 50px;
+  background-position: center;
 }
 
 .advantages__item--time {
   position: relative;
-  width: 60px;
-  min-height: 60px;
-  background-color: #68b738;
 }
 
 .advantages__item--time::before {
   content: "";
   position: absolute;
   top: 10px;
-  left: 10px;
-  width: 40px;//если делать меньше, почему то он скрывается
-  height: 44px;
+  left: 0;
+  width: 60px;
+  height: 60px;
   background-image: url("../img/advantage-clock@1x.png");
   background-repeat: no-repeat;
+  background-color: #68b738;
+  background-size: 50px;
+  background-position: center;
 }

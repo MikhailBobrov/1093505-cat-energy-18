@@ -12,16 +12,14 @@
         <nav class="page-header__navigation main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__wrapper">
-              <ul class="main-nav__list user-list">
-                <li class="user-list__item">
-                  <a class="user-list__logo">
-                    <picture>
-                      <source srcset="img/logo-mobile.svg" media="(max-width: 320px)" sizes="38">
-                      <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="логотип Кэт-Энерджи">
-                    </picture>
-                  </a>
-                </li>
-              </ul>
+              <div class="main-nav__list user-list">
+                <a class="user-list__logo">
+                  <picture>
+                    <source srcset="img/logo-mobile.svg" media="(max-width: 320px)" sizes="38">
+                    <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="логотип Кэт-Энерджи">
+                  </picture>
+                </a>
+              </div>
               <ul class="main-nav__list site-list">
                 <li class="site-list__item"><a href="index.html">Главная</a></li>
                 <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
@@ -112,7 +110,7 @@
                   </li>
                   <li class="additionally__item">
                     <input class="visually-hidden" id="milk" name="milk" type="checkbox" aria-label="Молоко">
-                    <label class="additionally__point" for="water">Молоко</label>
+                    <label class="additionally__point" for="milk">Молоко</label>
                   </li>
                   <li class="additionally__item">
                     <input class="visually-hidden" id="vitamins" name="vitamins" type="checkbox" aria-label="Витамины">

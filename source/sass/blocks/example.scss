@@ -65,15 +65,49 @@
   text-transform: uppercase;
 }
 
-//не знаю тут
-/*
-.example__controls {
-  background: url("../img/before-mobile@1x.png"),
-url("../img/after-mobile@1x.png");
-  background-repeat: no-repeat;
+.example__filter {
+  //временно для решения задачи
+  margin-bottom: 10px;
 }
 
- */
+.example__list {
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.example__item {
+  @include reset;
+  display: none;
+}
+
+.example__item:nth-child(1) {
+  min-width: 311px;
+  min-height: 232px;
+  background-image: url(../img/before-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: 93% 0;
+}
+
+.example__item:nth-child(2) {
+  min-width: 311px;
+  min-height: 232px;
+  background-image: url("../img/after-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 93% 0;
+}
+
+.example__item:nth-child(1) {
+  display: block;
+}
+
+.example__controls {
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+}
+
 
 .example__was {
   position: relative;

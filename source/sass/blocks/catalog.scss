@@ -21,8 +21,8 @@
   padding-bottom: 25px;
 }
 
-.catalog-items__image {
-  float: left;
+.catalog-items__point {
+  display: flex;
 }
 
 .catalog-items__wrapper {
@@ -54,6 +54,15 @@
 .catalog-items__button {
   margin-top: 25px;
   clear: both;
+}
+
+.catalog-items__plus {
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog-items__lead {
