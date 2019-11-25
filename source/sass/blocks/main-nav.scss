@@ -72,19 +72,22 @@
   }
 }
 
+.main-nav__list {
+  padding: 0;
+  padding-top: 15px;
+  margin: 0;
+}
+
+.main-nav__logo-image {
+  padding-left: 5px;
+  width: 200px;
+  height: 38px;
+  object-fit: contain;//тоже самое  что background size
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     /* Временно для сетки */
     min-height: 60px;
   }
-}
-
-.main-nav__list {
-  padding: 0;
-  padding-top: 20px;
-}
-
-.main-nav__logo-image {
-  width: 73px;
-  height: 17px;
 }
