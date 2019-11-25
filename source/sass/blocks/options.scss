@@ -39,34 +39,27 @@
   border-radius: 50%;
 }
 
-/*
-.options__title::after {
+.options__title--feed::after {
   content: "";
   position: absolute;
-  top: -11px;
-  left: 20px;
-  width: 50px;
-  height: 51px;
-  background-image: url("..img/icon-cat-slim.svg");
-}
-
-.options__feed {
-  width: 50px;
-  height: 51px;
-  background-color: #68b738;
-  //не понимаю почему картинка не работает
+  top: -13px;
+  left: 31px;
+  width: 35px;
+  height: 49px;
   background-image: url("../img/icon-cat-slim.svg");
-  border-radius: 50%;
+  background-repeat: no-repeat;
 }
 
-.options__mass {
-  width: 50px;
-  height: 51px;
-  background-color: #68b738;
-  border-radius: 50%;
+.options__title--mass::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
 }
-
- */
 
 .options__descriptions {
   position: relative;

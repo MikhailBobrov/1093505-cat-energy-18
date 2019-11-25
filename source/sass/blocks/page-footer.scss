@@ -7,8 +7,12 @@
 }
 
 .page-footer__logo-image {
+  margin-left: 75px;
   padding-top: 30px;
   margin-bottom: 30px;
+  width: 128px;
+  height: auto;
+  object-fit: contain;
 }
 
 .page-footer__logo {
