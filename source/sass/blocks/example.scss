@@ -81,9 +81,10 @@
 }
 
 .example__item:nth-child(1) {
+  display: block;
   min-width: 311px;
   min-height: 232px;
-  background-image: url(../img/before-mobile@1x.png);
+  background-image: url("../img/before-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 93% 0;
 }
@@ -97,9 +98,11 @@
 }
 
 
-.example__item:nth-child(1) {
+/*.example__item:nth-child(1) {
   display: block;
 }
+n
+ */
 
 /*
 .example__controls {
