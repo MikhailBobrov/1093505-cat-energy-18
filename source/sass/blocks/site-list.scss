@@ -1,7 +1,7 @@
 .site-list__item {
   @include reset;
   padding-top: 25px;
-  border-top: 1px solid lightgrey;;
+  border-top: 1px solid lightgrey;
   margin-bottom: 20px;
   color: $link-color;
   font-size: 20px;
@@ -10,6 +10,10 @@
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
+}
+
+.site-list:last-child {
+  border-bottom: 1px solid lightgrey;
 }
 
 .site-list__item:hover,

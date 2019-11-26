@@ -8,7 +8,7 @@
   </head>
   <body>
   <header class="page-header">
-    <div class="page-header__container container">
+    <div class="page-header__container">
       <nav class="page-header__navigation main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
@@ -30,12 +30,12 @@
     </div>
     </header>
 
-    <main class="catalog-page container">
-      <h1 class="catalog-page__title">Каталог продукции</h1>
+    <main class="catalog-page">
+      <h1 class="catalog-page__title container">Каталог продукции</h1>
       <div class="catalog-page__list catalog-items">
         <ul class="catalog-items__list">
           <li class="catalog-items__item catalog-items__item--chicken500">
-            <div class="catalog-items__point">
+            <div class="catalog-items__point container">
               <a class="catalog-items__image">
                 <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" aria-label="" alt="">
               </a>
@@ -57,12 +57,14 @@
                 </table>
               </div>
             </div>
+            <div class="catalog-items__cover container">
               <a class="catalog-items__button button" href="">Заказать</a>
+            </div>
           </li>
 
 
           <li class="catalog-items__item catalog-items__item--chicken1000">
-            <div class="catalog-items__point">
+            <div class="catalog-items__point container">
               <a class="catalog-items__image">
                 <img src="img/chicken-big-mobile@1x.jpg" width="140" height="144" aria-label="" alt="">
               </a>
@@ -85,11 +87,13 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-items__button button" href="">Заказать</a>
+            <div class="catalog-items__cover container">
+              <a class="catalog-items__button button" href="">Заказать</a>
+            </div>
           </li>
 
           <li class="catalog-items__item catalog-items__item--fish500">
-            <div class="catalog-items__point">
+            <div class="catalog-items__point container">
               <a class="catalog-items__image">
                 <img src="img/fish-small-mobile@1x.jpg" width="140" height="144" aria-label="" alt="">
               </a>
@@ -112,11 +116,13 @@
                   </table>
               </div>
             </div>
-            <a class="catalog-items__button button" href="">Заказать</a>
+            <div class="catalog-items__cover container">
+              <a class="catalog-items__button button" href="">Заказать</a>
+            </div>
           </li>
 
           <li class="catalog-items__item catalog-items__item--fish1000">
-            <div class="catalog-items__point">
+            <div class="catalog-items__point container">
               <a class="catalog-items__image">
                 <img src="img/fish-big-mobile@1x.jpg" width="140" height="144" aria-label="" alt="">
               </a>
@@ -139,11 +145,13 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-items__button button" href="">Заказать</a>
+            <div class="catalog-items__cover container">
+              <a class="catalog-items__button button" href="">Заказать</a>
+            </div>
           </li>
 
           <li class="catalog-items__item catalog-items__item--buckwheat500">
-            <div class="catalog-items__point">
+            <div class="catalog-items__point container">
               <a class="catalog-items__image">
                 <img src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" aria-label="" alt="">
               </a>
@@ -166,11 +174,13 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-items__button button" href="">Заказать</a>
+            <div class="catalog-items__cover container">
+              <a class="catalog-items__button button" href="">Заказать</a>
+            </div>
           </li>
 
           <li class="catalog-items__item catalog-items__item--buckwheat1000">
-            <div class="catalog-items__point">
+            <div class="catalog-items__point container">
               <a class="catalog-items__image">
                 <img src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" aria-label="" alt="">
               </a>
@@ -193,11 +203,13 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-items__button button" href="">Заказать</a>
+            <div class="catalog-items__cover container">
+              <a class="catalog-items__button button" href="">Заказать</a>
+            </div>
           </li>
 
           <li class="catalog-items__item catalog-items__item--rice500">
-            <div class="catalog-items__point">
+            <div class="catalog-items__point container">
               <a class="catalog-items__image">
                 <img src="img/rice-small-mobile@1x.jpg" width="140" height="144" aria-label="" alt="">
               </a>
@@ -220,68 +232,81 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-items__button button" href="">Заказать</a>
+            <div class="catalog-items__cover container">
+              <a class="catalog-items__button button" href="">Заказать</a>
+            </div>
           </li>
 
           <li class="catalog-items__item catalog-items__item--all">
-            <div class="catalog-items__plus">
-            <a class="catalog-items__image">
-              <!--<img src="img/icon-plus-mobile.svg" width="30" height="30" aria-label="" alt="">-->
-            </a>
-            </div>
-            <div class="catalog-items__wrapper">
+            <div class="catalog-items__envelope">
+              <div class="catalog-items__plus">
+                <a class="catalog-items__image">
+                  <!--<img src="img/icon-plus-mobile.svg" width="30" height="30" aria-label="" alt="">-->
+                </a>
+              </div>
             <p class="catalog-items__lead">Показать еще 100500 товаров</p>
             <p class="catalog-items__text">На самом деле вкусов гораздо больше!</p>
+              <div class="catalog-items__cover container">
+                <a class="catalog-items__dropdown" href="#">Показать все</a>
+              </div>
             </div>
-            <a class="catalog-items__dropdown" href="#">Показать все</a>
           </li>
         </ul>
       </div>
 
       <section class="benefits">
         <h2 class="benefits__title benefits__title--greenline">Дополнительные товары</h2>
-          <table class="benefits__table">
-            <tr>
-              <th class="benefits-row__title">Сахарозаменитель</th>
-            </tr>
-            <tr>
-              <td class="benefits-row__description">1 упаковка (100 г)</td>
-              <td class="benefits-row__price">200 Р.</td>
-            </tr>
-          </table>
+        <div class="benefits__wrapper container">
+          <div class="benefits__point">
+            <table class="benefits__table">
+              <tr>
+                <th class="benefits-row__title">Сахарозаменитель</th>
+              </tr>
+              <tr class="benefits-row__point">
+                <td class="benefits-row__description">1 упаковка (100 г)</td>
+                <td class="benefits-row__price">200 Р.</td>
+              </tr>
+            </table>
+          </div>
         <a class="benefits-row__button button" href="">Заказать</a>
 
-        <table class="benefits__table">
-          <tr>
-            <th class="benefits-row__title">Питьевая вода</th>
-          </tr>
-          <tr>
-            <td class="benefits-row__description">5 литров</td>
-            <td class="benefits-row__price">50 Р.</td>
-          </tr>
-        </table>
+          <div class="benefits__point">
+            <table class="benefits__table">
+              <tr>
+                <th class="benefits-row__title">Питьевая вода</th>
+              </tr>
+              <tr>
+                <td class="benefits-row__description">5 литров</td>
+                <td class="benefits-row__price">50 Р.</td>
+              </tr>
+            </table>
+          </div>
         <a class="benefits-row__button button" href="">Заказать</a>
 
-        <table class="benefits__table">
-          <tr>
-            <th class="benefits-row__title">Молоко</th>
-          </tr>
-          <tr>
-            <td class="benefits-row__description">1 литр</td>
-            <td class="benefits-row__price">100 Р.</td>
-          </tr>
-        </table>
+          <div class="benefits__point">
+            <table class="benefits__table">
+              <tr>
+                <th class="benefits-row__title">Молоко</th>
+              </tr>
+              <tr>
+                <td class="benefits-row__description">1 литр</td>
+                <td class="benefits-row__price">100 Р.</td>
+              </tr>
+            </table>
+          </div>
         <a class="benefits-row__button button" href="">Заказать</a>
 
-        <table class="benefits__table">
-          <tr>
-            <th class="benefits-row__title">Витамины</th>
-          </tr>
-          <tr>
-            <td class="benefits-row__description">1 упаковка (30 г)</td>
-            <td class="benefits-row__price">300 Р.</td>
-          </tr>
-        </table>
+          <div class="benefits__point">
+            <table class="benefits__table">
+              <tr>
+                <th class="benefits-row__title">Витамины</th>
+              </tr>
+              <tr>
+                <td class="benefits-row__description">1 упаковка (30 г)</td>
+                <td class="benefits-row__price">300 Р.</td>
+              </tr>
+            </table>
+          </div>
         <a class="benefits-row__button button" href="">Заказать</a>
 
           <div class="benefits-call__items benefits-call__items--image">
@@ -289,10 +314,11 @@
               и получите чехол для кота в подарок!
             </p>
           </div>
+        </div>
       </section>
 
       <section class="map">
-        <div class="map__contacts">
+        <div class="map__contacts container">
           <p class="map__slogan">приглашаем
             к сотрудничеству
             дилеров!
@@ -300,12 +326,7 @@
           <p class="map__adress">ул. Большая Конюшенная, д. 19/8
             Санкт-Петербург</p>
         </div>
-        <div class="map__container">
-          <picture>
-            <source srcset="img/bg-map-mobile@1x.png" media="(max-width: 500px)">
-            <img class="map__logo--image" src="img/logo-footer.svg" alt="логотип Кэт-Энерджи">
-          </picture>
-        </div>
+        <div class="map__container"></div>
       </section>
     </main>
 
