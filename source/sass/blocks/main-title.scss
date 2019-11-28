@@ -2,12 +2,16 @@
   position: relative;
   background: url("../img/index-background-mobile@1x.jpg");
   min-height: 305px;
+  background-repeat: no-repeat;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .main-title__headline {
   margin: 0;
   padding-top: 29px;
   padding-bottom: 19px;
+  width: 280px;
   color: $fancy-color;
   font-size: 36px;
   font-weight: 400;
@@ -22,6 +26,7 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
+  width: 280px;
 }
 
 .main-title__subtitle::after {
