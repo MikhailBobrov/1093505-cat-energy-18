@@ -73,13 +73,14 @@
 
   .main-title__wrapper {
     position: relative;
-    min-height: 305px;
+    min-height: 283px;
     background-image: none;
   }
 
   .main-title__headline {
-    padding-top: 60px;
-    width: 414px;
+    padding-top: 55px;
+    padding-left: 45px;
+    min-width: 480px;
     min-height: 122px;
     color: $link-color;
     font-size: 60px;
@@ -90,8 +91,8 @@
   }
 
   .main-title__subtitle {
-    margin-top: 30px;
-    margin-left: 43px;
+    margin-top: 21px;
+    margin-left: 88px;
     margin-bottom: 45px;
     text-align: left;
     color: $link-color;
@@ -106,8 +107,8 @@
   .main-title__subtitle::after {
     content: "";
     position: absolute;
-    top: 278px;
-    left: 21px;
+    top: 255px;
+    left: 30px;
     z-index: -1;
     width: 709px;
     height: 609px;
@@ -117,14 +118,14 @@
 
   .main-title__button {
     margin-top: 0;
+    margin-left: 88px;
+    padding-top: 15px;
     width: 245px;
     min-height: 52px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
-    padding-top: 15px;
-    margin-left: 43px;
   }
 }
 
@@ -155,8 +156,9 @@
 
   .main-title__headline {
     padding-top: 100px;
+    padding-left: 107px;
     padding-bottom: 33px;
-    width: 414px;
+    width: 525px;
     min-height: 122px;
     color: $link-color;
     font-size: 60px;
@@ -167,8 +169,8 @@
   }
 
   .main-title__subtitle {
-    margin-top: 30px;
-    margin-left: 43px;
+    margin-top: 10px;
+    margin-left: 150px;
     margin-bottom: 50px;
     text-align: left;
     color: $link-color;
@@ -183,8 +185,8 @@
   .main-title__subtitle::after {
     content: "";
     position: absolute;
-    top: 50px;
-    left: 269px;
+    top: 22px;
+    left: 560px;
     z-index: -1;
     width: 709px;
     height: 609px;
@@ -193,7 +195,7 @@
   }
 
   .main-title__button {
-    margin-top: 0;
+    margin-top: 31px;
     width: 245px;
     min-height: 52px;
     font-size: 20px;
@@ -201,6 +203,6 @@
     line-height: 20px;
     text-transform: uppercase;
     padding-top: 15px;
-    margin-left: 43px;
+    margin-left: 150px;
   }
 }
