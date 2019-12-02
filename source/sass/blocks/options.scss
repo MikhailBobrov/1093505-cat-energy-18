@@ -21,6 +21,7 @@
 .options__title {
   position: relative;
   margin: 0;
+  margin-top: 10px;
   padding-left: 92px;
   color: $link-color;
   font-size: 24px;
@@ -32,7 +33,7 @@
   content: "";
   position: absolute;
   top: -11px;
-  left: 20px;
+  left: 22px;
   width: 50px;
   height: 51px;
   background-color: #68b738;
@@ -54,7 +55,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 10px;
+  left: 13px;
   width: 67px;
   height: 28px;
   background-image: url("../img/icon-cat-pro.svg");
@@ -63,10 +64,11 @@
 
 .options__descriptions {
   position: relative;
-  padding-top: 24px;
+  padding-top: 19px;
   padding-left: 21px;
   padding-right: 36px;
-  padding-bottom: 24px;
+  padding-bottom: 27px;
+  min-width: 285px;
   color: #444444;
   font-size: 14px;
   font-weight: 400;
@@ -94,15 +96,39 @@
   text-transform: uppercase;
 }
 
-.options__catalog--slim::after {
+.options__catalog::after {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 118px;
+  top: 7px;
+  left: 117px;
   width: 25px;
   height: 20px;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
+}
+
+.options__catalog:hover::after,
+.options__catalog:focus::after {
+  top: 7px;
+  left: 117px;
+  width: 33px;
+  height: 20px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+}
+
+.options__catalog:active {
+  opacity: 0.3;
+}
+
+.options__catalog:active::after {
+  top: 7px;
+  left: 117px;
+  width: 33px;
+  height: 20px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .options__catalogpro {
@@ -114,13 +140,41 @@
   text-transform: uppercase;
 }
 
-.options__catalogpro--pro::after {
+.options__catalogpro::after {
   content: "";
   position: absolute;
   top: 6px;
-  left: 118px;
+  left: 114px;
   width: 25px;
   height: 20px;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
+}
+
+.options__catalogpro:hover::after,
+.options__catalogpro:focus::after {
+  top: 6px;
+  left: 114px;
+  width: 33px;
+  height: 20px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+}
+
+.options__catalogpro:active {
+  opacity: 0.3;
+}
+
+.options__catalogpro:active::after {
+  top: 6px;
+  left: 114px;
+  width: 33px;
+  height: 20px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+
 }

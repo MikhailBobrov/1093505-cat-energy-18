@@ -1,6 +1,6 @@
 .site-list__item {
   @include reset;
-  padding-top: 25px;
+  padding-top: 24px;
   border-top: 1px solid lightgrey;
   padding-bottom: 20px;
   color: $link-color;
@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 16px;
     padding-bottom: 10px;
     width: 440px;
@@ -62,7 +63,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 540px;
+    padding-left: 46px;
+    width: 525px;
     margin-top: 50px;
     min-height: 70px;
   }
@@ -90,6 +92,14 @@
 
   .site-list__item--active {
     border-bottom: 2px solid $fancy-color;
-    width: 62px;
+    width: 68px;
+  }
+
+  .site-list__item--link {
+    color: $fancy-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.86px;
+    text-transform: uppercase;
   }
 }
