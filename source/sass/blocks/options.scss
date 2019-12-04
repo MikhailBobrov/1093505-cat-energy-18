@@ -1,3 +1,7 @@
+.options {
+  width: 320px;
+}
+
 .options__wrapper {
   margin-top: 22px;
   margin-bottom: 32px;
@@ -490,7 +494,7 @@
 
   .options__catalog:active::after {
     top: 7px;
-    lleft: 183px;
+    left: 183px;
     width: 33px;
     height: 20px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
