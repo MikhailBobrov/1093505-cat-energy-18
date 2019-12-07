@@ -2,3 +2,19 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

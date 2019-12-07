@@ -14,6 +14,8 @@
 }
 
 .example__point {
+  display: flex;
+  flex-direction: column;
   width: 320px;
   margin: 0 auto;
 }
@@ -194,6 +196,8 @@ n
   }
 
   .example__point {
+    display: flex;
+    flex-direction: column;
     width: 708px;
     margin: 0 auto;
   }
@@ -383,6 +387,8 @@ n
   }
 
   .example__point {
+    display: flex;
+    flex-direction: row;
     width: 1220px;
   }
 
@@ -488,11 +494,11 @@ n
 
   .example__item:nth-child(1) {
     display: block;
-    max-width: 677px;
-    min-height: 555px;
+    min-width: 816px;
+    min-height: 499px;
     background-image: url("../img/before-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: -120% 34px;
+    background-position: 107% -51px;
   }
 
   .example__item:nth-child(2) {
