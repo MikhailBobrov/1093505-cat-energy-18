@@ -75,10 +75,10 @@
 }
 
 .main-nav__logo-image {
-  margin-top: 10px;
-  margin-left: 20px;
+  margin-top: 12px;
+  margin-left: -4px;
   width: 200px;
-  height: 38px;
+  height: 42px;
   object-fit: contain;//тоже самое  что background size
 }
 
@@ -118,6 +118,13 @@
   .main-nav__toggle {
     display: none;
   }
+
+  .main-nav__logo-image {
+    margin-top: -6px;
+    width: 256px;
+    height: 65px;
+    object-fit: contain;//тоже самое  что background size
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -132,5 +139,12 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__logo-image {
+    margin-top: -3px;
+    width: 297px;
+    height: 65px;
+    object-fit: contain;//тоже самое  что background size
   }
 }
