@@ -9,8 +9,8 @@
   <body>
     <header class="page-header">
       <div class="page-header__container">
-        <nav class="main-nav main-nav--closed main-nav--nojs"> <!--main-nav--closed-->
-         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__wrapper container">
               <div class="main-nav__list user-list">
                 <a class="user-list__logo" href="index.html">
@@ -117,21 +117,25 @@
             </div>
         </div>
       </section>
-            <!--
-              <section class="map">
-                <div class="map__contacts container">
-                  <p class="map__slogan">приглашаем
-                    к сотрудничеству
-                    дилеров!
-                  </p>
-                  <p class="map__adress">ул. Большая Конюшенная, д. 19/8
-                    Санкт-Петербург</p>
-                </div>
-                <div class="map__container"></div>
-              </section>
-              -->
+
+      <section class="map">
+        <div class="map__block container"><!--relative-->
+          <div class="map__contacts"><!--absolute-->
+            <p class="map__slogan">приглашаем<br>
+              к сотрудничеству
+              дилеров!
+            </p>
+            <p class="map__adress">ул. Большая<br> Конюшенная, д. 19/8
+              <span class="map__adress map__adress--sp">Санкт-Петербург</span></p>
+          </div>
+        </div>
+          <div class="map__container">
+            <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4efd18f1bd3fa223b8b3a02d6d25214dd31d2c7291aa83575f6a96f64e257225&amp;source=constructor" height="362" frameborder="0"></iframe>
+          </div>
+      </section>
+
     </main>
-<!--
+
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo">
@@ -161,7 +165,6 @@
         </div>
       </div>
     </footer>
-   -->
   <script src="js/toogle.js"></script>
   </body>
 </html>
