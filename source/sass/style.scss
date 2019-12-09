@@ -1,7 +1,9 @@
+@import "blocks/normalize";
 @import "fonts";
 @import "variables";
 @import "mixins";
 @import "blocks/common.scss";
+@import "blocks/button";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/main-title";
@@ -13,8 +15,6 @@
 @import "blocks/social";
 @import "blocks/catalog";
 @import "blocks/benefits";
-@import "blocks/normalize";
-@import "blocks/button";
 @import "blocks/container";
 @import "blocks/copyright";
 @import "blocks/form-page";
@@ -23,3 +23,5 @@
 @import "blocks/form-contacts";
 @import "blocks/form-comments";
 @import "blocks/additionally";
+@import "blocks/user-list";
+@import "blocks/site-list";

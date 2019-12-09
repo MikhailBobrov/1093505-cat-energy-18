@@ -1,0 +1,56 @@
+.user-list {
+  margin-top: 13px;
+  margin-left: 3px;
+  width: 189px;
+  height: 45px;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+//я убрал в индекс инлайновый элемент img и вставил картинку выше через background
+/*.user-list__logo {
+  display: block;
+  min-height: 60px;
+  text-align: center;
+  max-width: 70%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+ */
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    margin: 0;
+    margin-top: 25px;
+    width: 173px;
+    height: 58px;
+    background-image: url("../img/logo-tablet.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    margin: 0;
+    margin-top: 54px;
+    width: 200px;
+    height: 59px;
+    background-image: url("../img/logo-desktop.svg");
+  }
+}
