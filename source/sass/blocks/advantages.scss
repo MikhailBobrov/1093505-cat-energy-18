@@ -13,6 +13,7 @@
 .advantages__list {
   @include reset;
   margin: 0;
+  padding-bottom: 22px;
 }
 
 .advantages__item {
@@ -125,6 +126,7 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
   }
 
   .advantages__item {
