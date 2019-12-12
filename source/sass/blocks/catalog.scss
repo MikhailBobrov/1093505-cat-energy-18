@@ -13,7 +13,7 @@
 
 .catalog-items__item {
   //padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   border-top: 1px solid #ededed;
   min-height: 210px;
 }
@@ -47,6 +47,7 @@
 .catalog-items__table {
   border-collapse: collapse;
   background-color: lightgray;
+  outline: 2px dotted hotpink
 }
 
 .catalog-items__left {
