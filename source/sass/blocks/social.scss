@@ -54,6 +54,15 @@
   background-repeat: no-repeat;
 }
 
+.social__item {
+  cursor: pointer;
+}
+
+.social__item:hover,
+.social__item:focus {
+  fill: #65a93c;
+}
+
 @media (min-width: $tablet-width) {
   .social__list {
     @include reset;
