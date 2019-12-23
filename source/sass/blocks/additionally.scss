@@ -1,5 +1,7 @@
 .additionally__wrapper {
   padding: 0;
+  margin: 0;
+  margin-bottom: 29px;
   border: none;
 }
 
@@ -15,14 +17,23 @@
   line-height: 24px;
 }
 
-.additionally__text--greenline::after {
-  content: "";
+.additionally__text::after {
   position: absolute;
+  content: "";
+  //display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
   top: 14px;
-  left: 162px;
-  width: 136px;
+  left: 163px;
   height: 3px;
-  background-color: #68b738;
+  background-color: #5eaa2f;
+  //border: solid $fancy-color;
+  //border-width: 0 22px;
+  margin-right: -100%;
+}
+
+.additionally__item {
+  margin-bottom: 2px;
 }
 
 .additionally__point {
@@ -39,7 +50,7 @@
   content: "";
   position: absolute;
   left: 0;
-  top: -4px;
+  top: -2px;
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;

@@ -1,15 +1,17 @@
 .form-radio__list {
+  margin-bottom: 24px;
   border: none;
   padding-left: 0;
 }
 
 .radio-item__list {
   @include reset;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .radio-item__style {
   position: relative;
+  padding-left: 4px;
   color: #222222;
   font-size: 16px;
   font-weight: 400;
@@ -20,7 +22,7 @@
 .radio-item__style::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -42px;
   bottom: -3px;
   width: 30px;
   height: 30px;
@@ -40,7 +42,7 @@
 }
 
 .radio-item__list input[type="radio"]:checked + .radio-item__style::after {
-  left: -31px;
+  left: -33px;
   width: 12px;
   height: 12px;
   background-color: #68b738;

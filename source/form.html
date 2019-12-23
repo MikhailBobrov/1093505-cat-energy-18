@@ -7,24 +7,25 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__container">
-        <nav class="page-header__navigation main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <div class="main-nav__wrapper">
-              <div class="main-nav__list user-list">
-                <a class="user-list__logo">
-                  <picture>
-                    <source srcset="img/logo-mobile.svg" media="(max-width: 320px)" sizes="38">
-                    <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="логотип Кэт-Энерджи">
-                  </picture>
-                </a>
-              </div>
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item"><a href="index.html">Главная</a></li>
-                <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-                <li class="site-list__item site-list__item--active"><a>Подбор программы</a></li>
-            </ul>
+  <header class="page-header">
+    <div class="page-header__container">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper container">
+          <div class="main-nav__list user-list">
+            <a class="user-list__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="200" height="42" alt="логотип Кэт-Энерджи">
+              </picture>
+            </a>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--white"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item site-list__item--active"><a>Подбор программы</a></li>
+          </ul>
           </div>
         </nav>
       </div>
@@ -75,7 +76,7 @@
 
           <div class="form-list__contacts form-contacts">
             <fieldset class="form-contacts__list">
-              <legend class="form-contacts__data form-contacts__data--greenline">Контактные данные (владельца кота)</legend>
+              <legend class="form-contacts__data">Контактные данные (владельца кота)</legend>
                 <ul class="form-contacts__wrapper">
                   <li class="form-contacts__point form-contacts__point--email">
                     <label class="form-contacts__label form-contacts__label--email" for="email-login">E-mail:<sup>*</sup></label>
@@ -92,14 +93,14 @@
           </div>
 
           <div class="form-list__comments form-comments">
-            <p class="form-comments__text form-comments__text--greenline">Комментарий</p>
+            <p class="form-comments__text">Комментарий</p>
               <label class="form-comments__label" for="textarea"></label>
               <textarea class="form-comments__textarea" id="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
 
           <div class="form-list__additionally additionally">
             <fieldset class="additionally__wrapper">
-              <legend class="additionally__text additionally__text--greenline">Дополнительно</legend>
+              <legend class="additionally__text">Дополнительно</legend>
                 <ul class="additionally__list">
                   <li class="additionally__item">
                     <input class="visually-hidden" id="sugarfree" name="sugarfee" type="checkbox" checked aria-label="Сахарозаменитель">
@@ -139,15 +140,19 @@
       </div>
 
       <section class="map">
-        <div class="map__contacts container">
-          <p class="map__slogan">приглашаем
-            к сотрудничеству
-            дилеров!
-          </p>
-          <p class="map__adress">ул. Большая Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+        <div class="map__block container">
+          <div class="map__contacts">
+            <p class="map__slogan">приглашаем<br>
+              к сотрудничеству
+              дилеров!
+            </p>
+            <p class="map__adress">ул. Большая<br> Конюшенная, д. 19/8
+              <span class="map__adress map__adress--sp">Санкт-Петербург</span></p>
+          </div>
         </div>
-        <div class="map__container"></div>
+        <div class="map__container">
+          <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4efd18f1bd3fa223b8b3a02d6d25214dd31d2c7291aa83575f6a96f64e257225&amp;source=constructor" height="362" frameborder="0"></iframe>
+        </div>
       </section>
     </main>
 

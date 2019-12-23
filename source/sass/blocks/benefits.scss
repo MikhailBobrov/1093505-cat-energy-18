@@ -83,6 +83,7 @@
 .benefits-call__items--image {
   position: relative;
   background-color: $fancy-color;
+  background-size: contain;
 }
 
 .benefits-call__items--image::before {
@@ -325,6 +326,7 @@
 
   .benefits__envelope {
     display: flex;
+    margin-bottom: 59px;
   }
 
   .benefits__point-wrapper {
@@ -352,7 +354,8 @@
   }
 
   .benefits__table {
-    width: 244px;
+    margin-right: 38px;
+    width: 288px;
     margin-bottom: 14px;
     border-collapse: collapse;
   }
@@ -401,7 +404,8 @@
     justify-content: center;
     align-items: flex-end;
     width: 245px;
-    margin-top: 15px;
+    margin-top: -10px;
+    margin-bottom: 10px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     min-height: 200px;
     background-repeat: no-repeat;
@@ -410,5 +414,35 @@
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
+  }
+
+  .benefits-call__items--image {
+    position: relative;
+    background-color: $fancy-color;
+  }
+
+  .benefits-call__items--image::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 95px;
+    width: 55px;
+    height: 60px;
+    color: $fancy-color;
+    background-image: url("../img/gift.png");
+    background-repeat: no-repeat;
+  }
+
+  .benefits-call__subtitle {
+    margin-bottom: 42px;
+    margin-left: 59px;
+    min-width: 147px;
+    margin-right: 59px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ffffff;
+    font-family: "Arial", sans-serif;
   }
 }
