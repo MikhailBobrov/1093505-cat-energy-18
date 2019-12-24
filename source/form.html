@@ -92,6 +92,10 @@
             </fieldset>
           </div>
 
+          <svg style="display: none;">
+
+          </svg>
+
           <div class="form-list__comments form-comments">
             <p class="form-comments__text">Комментарий</p>
               <label class="form-comments__label" for="textarea"></label>
@@ -160,8 +164,9 @@
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo">
           <picture>
-            <source srcset="img/logo-footer.svg" media="(max-width: 320px)">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="логотип Кэт-Энерджи">
+            <source media="(min-width: 1300px)" srcset="img/logo-footer.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-footer.svg">
+            <img class="page-footer__logo-image" width="128" height="48" src="img/logo-footer.svg" alt="логотип Кэт-Энерджи">
           </picture>
         </a>
 
@@ -176,6 +181,12 @@
             <a class="social__link " href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
         </ul>
+
+        <svg style="display: none;">
+          <symbol>
+
+          </symbol>
+        </svg>
 
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>

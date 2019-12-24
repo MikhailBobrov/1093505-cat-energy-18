@@ -96,3 +96,123 @@
 .form-contacts__label--tel {
   margin-right: 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-contacts__list {
+    margin: 0;
+    border: none;
+    padding: 0;
+  }
+
+  .form-contacts__data {
+    position: relative;
+    margin-bottom: 65px;
+    padding-left: 39px;
+    min-height: 49px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  .form-contacts__data::after {
+    position: absolute;
+    content: "";
+    //display: inline-block;
+    // vertical-align: middle;
+    //box-sizing: border-box;
+    width: 100%;
+    top: 22px;
+    left: 593px;
+    height: 3px;
+    background-color: #5eaa2f;
+    //border: solid $fancy-color;
+    //border-width: 0 22px;
+    margin-right: -100%;
+  }
+
+  .form-contacts__data::before {
+    position: absolute;
+    content: "";
+    //display: inline-block;
+    // vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    top: 22px;
+    left: 0;
+    height: 3px;
+    background-color: #5eaa2f;
+    //border: solid $fancy-color;
+    //border-width: 0 22px;
+    margin-left: -100%;
+  }
+
+  .form-contacts__wrapper {
+    @include reset;
+    margin-left: 40px;
+  }
+
+  .form-contacts__point {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .form-contacts__point--email {
+    position: relative;
+  }
+
+  .form-contacts__svg1 {
+    content: "";
+    position: absolute;
+    right: 19px;
+    bottom: 39px;
+    width: 17px;
+    height: 13px;
+  }
+
+  .form-contacts__point--tel {
+    position: relative;
+  }
+
+  .form-contacts__svg2 {
+    content: "";
+    position: absolute;
+    right: 16px;
+    bottom: 33px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .form-contacts__label {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .form-contacts__input {
+    width: 100%;
+    margin-bottom: 21px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    color: #444444;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    height: 49px;
+    border: 1px solid #cdcdcd;
+    opacity: 0.5;
+  }
+
+  .form-contacts__label--email {
+    margin-right: 21px;
+    width: 70px;
+  }
+
+  .form-contacts__label--tel {
+    margin-right: 16px;
+  }
+}
