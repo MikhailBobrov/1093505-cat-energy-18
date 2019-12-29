@@ -54,7 +54,6 @@
     margin-top: 46px;
     margin-left: 41px;
     margin-bottom: 76px;
-    border: none;
     padding-left: 0;
     padding-bottom: 1px;
     border-top: 1px solid lightgray;
@@ -65,6 +64,74 @@
 
   .form-radio__items {
     padding-left: 74px;
+    padding-top: 10px;
+  }
+
+  .radio-item__list {
+    @include reset;
+    margin-bottom: 32px;
+  }
+
+  .radio-item__style {
+    position: relative;
+    padding-left: 12px;
+    color: #222222;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .radio-item__style::before {
+    content: "";
+    position: absolute;
+    left: -47px;
+    bottom: -5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+  .radio-item__style::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    bottom: 8px;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border-radius: 50%;
+  }
+
+  .radio-item__list input[type="radio"]:checked + .radio-item__style::after {
+    left: -36px;
+    width: 18px;
+    height: 18px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-radio {
+    width: 100%;
+  }
+
+  .form-radio__list {
+    margin-top: 54px;
+    margin-left: 41px;
+    margin-bottom: 76px;
+    padding-left: 0;
+    padding-bottom: 1px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+  }
+
+  .form-radio__items {
+    padding-left: 72px;
     padding-top: 10px;
   }
 
