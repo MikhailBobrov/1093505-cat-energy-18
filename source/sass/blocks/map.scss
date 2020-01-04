@@ -44,6 +44,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map {
+    background-color: #f2f2f2;
+  }
+
   .map__container {
     min-height: 400px;
     background-image: url("../img/map_tablet.png");
@@ -65,7 +69,7 @@
     flex-direction: row;
     justify-content: space-between;
     min-height: 114px;
-    background-color: $fancy-color;
+    background-color: #f2f2f2;
   }
 
   .map__slogan {
