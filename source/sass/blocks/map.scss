@@ -18,8 +18,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 33px;
-  min-height: 114px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  //min-height: 114px;
   background-color: $fancy-color;
 }
 
@@ -118,7 +119,7 @@
 
   .map__contacts {
     position: absolute;
-    top: 62px;
+    top: 78px;
     left: 40px;
     display: flex;
     flex-direction: row;

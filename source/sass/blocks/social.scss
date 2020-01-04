@@ -63,6 +63,11 @@
   fill: #65a93c;
 }
 
+.social__item:active {
+  fill: #65a93c;
+  opacity: 0.5;
+}
+
 @media (min-width: $tablet-width) {
   .social__list {
     @include reset;
@@ -70,8 +75,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 155px;
-    width: 125px;
+    margin-left: 156px;
+    margin-top: -11px;
+    width: 219px;
   }
 
   .social__list::before {
@@ -105,6 +111,20 @@
     background-image: url("../img/icon-fb.svg");
     background-repeat: no-repeat;
   }
+
+  .social__item {
+    cursor: pointer;
+  }
+
+  .social__item:hover,
+  .social__item:focus {
+    fill: #65a93c;
+  }
+
+  .social__item:active {
+    fill: #65a93c;
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -114,7 +134,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 155px;
+    margin-top: -16px;
+    margin-left: 277px;
     width: 125px;
   }
 
@@ -148,5 +169,19 @@
     height: 28px;
     background-image: url("../img/icon-fb.svg");
     background-repeat: no-repeat;
+  }
+
+  .social__item {
+    cursor: pointer;
+  }
+
+  .social__item:hover,
+  .social__item:focus {
+    fill: #65a93c;
+  }
+
+  .social__item:active {
+    fill: #65a93c;
+    opacity: 0.5;
   }
 }

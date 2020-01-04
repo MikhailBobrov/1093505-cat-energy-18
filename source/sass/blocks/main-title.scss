@@ -29,7 +29,7 @@
 
 .main-title__headline {
   margin: 0;
-  padding-top: 26px;
+  padding-top: 27px;
   padding-bottom: 19px;
   width: 280px;
   color: $fancy-color;
@@ -53,7 +53,7 @@
 .main-title__subtitle::after {
   content: "";
   position: absolute;
-  top: 169px;
+  top: 166px;
   left: 20px;
   z-index: 1;
   width: 280px;
@@ -72,7 +72,7 @@
 }
 
 .main-title__button {
-  margin-top: 138px;
+  margin-top: 135px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;

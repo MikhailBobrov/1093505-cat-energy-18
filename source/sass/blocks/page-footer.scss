@@ -8,12 +8,21 @@
 }
 
 .page-footer__logo-image {
+  margin-top: 13px;
   margin-left: 76px;
   padding-top: 24px;
   margin-bottom: 30px;
   width: 128px;
   height: 48px;
   object-fit: contain;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,11 +33,11 @@
   }
 
   .page-footer__logo-image {
-    margin-top: 44px;
+    margin-top: 33px;
     margin-left: 0;
     padding-top: 24px;
     margin-bottom: 30px;
-    width: 128px;
+    width: 224px;
     height: 48px;
     object-fit: contain;
   }
@@ -43,7 +52,7 @@
   }
 
   .page-footer__logo-image {
-    margin-top: 53px;
+    margin-top: 38px;
     margin-left: 0;
     padding-top: 24px;
     margin-bottom: 30px;
