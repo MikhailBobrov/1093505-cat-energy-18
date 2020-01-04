@@ -7,24 +7,25 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__container">
-        <nav class="page-header__navigation main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <div class="main-nav__wrapper">
-              <div class="main-nav__list user-list">
-                <a class="user-list__logo">
-                  <picture>
-                    <source srcset="img/logo-mobile.svg" media="(max-width: 320px)" sizes="38">
-                    <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="логотип Кэт-Энерджи">
-                  </picture>
-                </a>
-              </div>
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item"><a href="index.html">Главная</a></li>
-                <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-                <li class="site-list__item site-list__item--active"><a>Подбор программы</a></li>
-            </ul>
+  <header class="page-header">
+    <div class="page-header__container">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper container">
+          <div class="main-nav__list user-list">
+            <a class="user-list__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="200" height="42" alt="логотип Кэт-Энерджи">
+              </picture>
+            </a>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--white"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item site-list__item--active"><a>Подбор программы</a></li>
+          </ul>
           </div>
         </nav>
       </div>
@@ -34,72 +35,75 @@
       <div class="form-page__container container">
       <h1 class="form-page__title">Подбор программы</h1>
         <p class="form-page__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
       <section class="form-page__wrapper">
         <form class="form-page__form form-list" method="post" action="https://echo.htmlacademy.ru.">
-          <div class="form-list__wrapper">
-            <ul class="form-list__item">
-              <li class="form-list__point">
-                <label class="form-list__label form-list__label--name" for="login-field">Имя:<sup>*</sup></label>
-                <input class="form-list__input" type="text" name="login" id="login-field" value="" placeholder="Барсик" required>
-              </li>
-              <li class="form-list__point">
-                <label class="form-list__label form-list__label--fit" for="login-kilo">Вес (кг):<sup>*</sup></label>
-                <input class="form-list__input" type="text" name="kilo" id="login-kilo" value="" placeholder="7" required>
-              </li>
-              <li class="form-list__point">
-                <label class="form-list__label form-list__label--age" for="login-age">Возраст (лет):</label>
-                <input class="form-list__input" type="text" name="age" id="login-age" value="" placeholder="7">
-              </li>
-            </ul>
-          </div>
-
-          <div class="form-list__cover form-radio">
-            <fieldset class="form-radio__list">
-              <legend class="visually-hidden">Варианты</legend>
-              <ul class="form-radio__items radio-item">
-                <li class="radio-item__list">
-                  <input class="visually-hidden"  id="lost" type="radio" name="version" value="lost" aria-label="Похудение" checked>
-                  <label class="radio-item__style" for="lost">Похудение</label>
+          <div class="form-list__twice">
+            <div class="form-list__wrapper">
+              <ul class="form-list__item">
+                <li class="form-list__point">
+                  <label class="form-list__label form-list__label--name" for="login-field">Имя:<sup>*</sup></label>
+                  <input class="form-list__input" type="text" name="login" id="login-field" value="" placeholder="Барсик" required>
                 </li>
-                <li class="radio-item__list">
-                  <input class="visually-hidden"  id="weight" type="radio" name="version" value="weight" aria-label="Набор массы">
-                  <label class="radio-item__style" for="weight">Набор массы</label>
+                <li class="form-list__point">
+                  <label class="form-list__label form-list__label--fit" for="login-kilo">Вес (кг):<sup>*</sup></label>
+                  <input class="form-list__input" type="text" name="kilo" id="login-kilo" value="" placeholder="7" required>
                 </li>
-                <li class="radio-item__list">
-                  <input class="visually-hidden"  id="advice" type="radio" name="version" value="advice" aria-label="Не знаю (Нужен ваш совет)">
-                  <label class="radio-item__style" for="advice">Не знаю (Нужен ваш совет)</label>
+                <li class="form-list__point">
+                  <label class="form-list__label form-list__label--age" for="login-age">Возраст (лет):</label>
+                  <input class="form-list__input" type="text" name="age" id="login-age" value="" placeholder="7">
                 </li>
               </ul>
-            </fieldset>
+            </div>
+
+            <div class="form-list__cover form-radio">
+              <fieldset class="form-radio__list">
+                <legend class="visually-hidden">Варианты</legend>
+                <ul class="form-radio__items radio-item">
+                  <li class="radio-item__list">
+                    <input class="visually-hidden"  id="lost" type="radio" name="version" value="lost" aria-label="Похудение" checked>
+                    <label class="radio-item__style" for="lost">Похудение</label>
+                  </li>
+                  <li class="radio-item__list">
+                    <input class="visually-hidden"  id="weight" type="radio" name="version" value="weight" aria-label="Набор массы">
+                    <label class="radio-item__style" for="weight">Набор массы</label>
+                  </li>
+                  <li class="radio-item__list">
+                    <input class="visually-hidden"  id="advice" type="radio" name="version" value="advice" aria-label="Не знаю (Нужен ваш совет)">
+                    <label class="radio-item__style" for="advice">Не знаю (Нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
           </div>
 
           <div class="form-list__contacts form-contacts">
             <fieldset class="form-contacts__list">
-              <legend class="form-contacts__data form-contacts__data--greenline">Контактные данные (владельца кота)</legend>
+              <legend class="form-contacts__data">Контактные данные (владельца кота)</legend>
                 <ul class="form-contacts__wrapper">
                   <li class="form-contacts__point form-contacts__point--email">
                     <label class="form-contacts__label form-contacts__label--email" for="email-login">E-mail:<sup>*</sup></label>
                     <input class="form-contacts__input form-contacts__input--email" id="email-login" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-                      <svg class="form-contacts__svg1" width="17" height="13"><path d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z"/></svg>
+                      <svg class="form-contacts__svg1" width="17" height="13"><use xlink:href="img/sprite.svg#email"></use></svg>
                   </li>
                   <li class="form-contacts__point form-contacts__point--tel">
                     <label class="form-contacts__label form-contacts__label--tel" for="tel">Телефон:<sup>*</sup></label>
                     <input class="form-contacts__input" id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90" required>
-                      <svg class="form-contacts__svg2" width="20" height="20"><path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8H6.8v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1A3 3 0 000 2.9V16.8a2.9 2.9 0 002.9 3.1H7.5c.3.1.6-.2.6-.5z"/></svg>
+                      <svg class="form-contacts__svg2" width="20" height="20"><use xlink:href="img/sprite.svg#phone"></use></svg>
                   </li>
                 </ul>
             </fieldset>
           </div>
 
           <div class="form-list__comments form-comments">
-            <p class="form-comments__text form-comments__text--greenline">Комментарий</p>
+            <p class="form-comments__text">Комментарий</p>
               <label class="form-comments__label" for="textarea"></label>
               <textarea class="form-comments__textarea" id="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
 
           <div class="form-list__additionally additionally">
             <fieldset class="additionally__wrapper">
-              <legend class="additionally__text additionally__text--greenline">Дополнительно</legend>
+              <legend class="additionally__text">Дополнительно</legend>
                 <ul class="additionally__list">
                   <li class="additionally__item">
                     <input class="visually-hidden" id="sugarfree" name="sugarfee" type="checkbox" checked aria-label="Сахарозаменитель">
@@ -139,15 +143,19 @@
       </div>
 
       <section class="map">
-        <div class="map__contacts container">
-          <p class="map__slogan">приглашаем
-            к сотрудничеству
-            дилеров!
-          </p>
-          <p class="map__adress">ул. Большая Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+        <div class="map__block container">
+          <div class="map__contacts">
+            <p class="map__slogan">приглашаем<br>
+              к сотрудничеству
+              дилеров!
+            </p>
+            <p class="map__adress">ул. Большая<br> Конюшенная, д. 19/8
+              <span class="map__adress map__adress--sp">Санкт-Петербург</span></p>
+          </div>
         </div>
-        <div class="map__container"></div>
+        <div class="map__container">
+          <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4efd18f1bd3fa223b8b3a02d6d25214dd31d2c7291aa83575f6a96f64e257225&amp;source=constructor" height="362" frameborder="0"></iframe>
+        </div>
       </section>
     </main>
 
@@ -155,27 +163,33 @@
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo">
           <picture>
-            <source srcset="img/logo-footer.svg" media="(max-width: 320px)">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="логотип Кэт-Энерджи">
+            <source media="(min-width: 1300px)" srcset="img/logo-footer.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-footer.svg">
+            <img class="page-footer__logo-image" width="128" height="48" src="img/logo-footer.svg" alt="логотип Кэт-Энерджи">
           </picture>
         </a>
 
         <ul class="social__list">
-          <li class="social__item social__link--vkontakte">
-            <a class="social__link " href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
+          <li class="social__item">
+            <a class="social__link " href="#">
+              <svg class="social__link--vkontakte"><use xlink:href="img/sprite.svg#vk"></use> </svg><span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
           </li>
-          <li class="social__item social__link--instagram">
-            <a class="social__link" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__link--instagram"><use xlink:href="img/sprite.svg#insta"></use> </svg><span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
           </li>
-          <li class="social__item social__link--facebook">
-            <a class="social__link " href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+          <li class="social__item">
+            <a class="social__link " href="#">
+              <svg class="social__link--facebook"><use xlink:href="img/sprite.svg#facebook"></use></svg> <span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
         </ul>
 
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__image" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo" src="img/htmlacademy.svg"  width="27" height="34" aria-label="HTML Academy" alt="HTML Academy">
+            <svg class="copyright__logo" width="27" height="34"><use xlink:href="img/sprite.svg#htmlacademy"></use></svg>
           </a>
         </div>
       </div>
