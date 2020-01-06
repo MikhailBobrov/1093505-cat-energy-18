@@ -31,6 +31,10 @@
       </div>
     </header>
 
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
     <main class="form-page">
       <div class="form-page__container container">
       <h1 class="form-page__title">Подбор программы</h1>
@@ -43,11 +47,11 @@
               <ul class="form-list__item">
                 <li class="form-list__point">
                   <label class="form-list__label form-list__label--name" for="login-field">Имя:<sup>*</sup></label>
-                  <input class="form-list__input" type="text" name="login" id="login-field" value="" placeholder="Барсик" required>
+                  <input class="form-list__input" type="text" name="login" id="login-field" value="" placeholder="Барсик" required="">
                 </li>
                 <li class="form-list__point">
                   <label class="form-list__label form-list__label--fit" for="login-kilo">Вес (кг):<sup>*</sup></label>
-                  <input class="form-list__input" type="text" name="kilo" id="login-kilo" value="" placeholder="7" required>
+                  <input class="form-list__input" type="text" name="kilo" id="login-kilo" value="" placeholder="7" required="">
                 </li>
                 <li class="form-list__point">
                   <label class="form-list__label form-list__label--age" for="login-age">Возраст (лет):</label>
@@ -61,15 +65,15 @@
                 <legend class="visually-hidden">Варианты</legend>
                 <ul class="form-radio__items radio-item">
                   <li class="radio-item__list">
-                    <input class="visually-hidden"  id="lost" type="radio" name="version" value="lost" aria-label="Похудение" checked>
+                    <input class="visually-hidden" id="lost" type="radio" name="version" value="lost" aria-label="Похудение" checked="">
                     <label class="radio-item__style" for="lost">Похудение</label>
                   </li>
                   <li class="radio-item__list">
-                    <input class="visually-hidden"  id="weight" type="radio" name="version" value="weight" aria-label="Набор массы">
+                    <input class="visually-hidden" id="weight" type="radio" name="version" value="weight" aria-label="Набор массы">
                     <label class="radio-item__style" for="weight">Набор массы</label>
                   </li>
                   <li class="radio-item__list">
-                    <input class="visually-hidden"  id="advice" type="radio" name="version" value="advice" aria-label="Не знаю (Нужен ваш совет)">
+                    <input class="visually-hidden" id="advice" type="radio" name="version" value="advice" aria-label="Не знаю (Нужен ваш совет)">
                     <label class="radio-item__style" for="advice">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
@@ -83,12 +87,12 @@
                 <ul class="form-contacts__wrapper">
                   <li class="form-contacts__point form-contacts__point--email">
                     <label class="form-contacts__label form-contacts__label--email" for="email-login">E-mail:<sup>*</sup></label>
-                    <input class="form-contacts__input form-contacts__input--email" id="email-login" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                    <input class="form-contacts__input form-contacts__input--email" id="email-login" type="email" name="email" placeholder="kuklachev@gmail.com" required="">
                       <svg class="form-contacts__svg1" width="17" height="13"><use xlink:href="img/sprite.svg#email"></use></svg>
                   </li>
                   <li class="form-contacts__point form-contacts__point--tel">
                     <label class="form-contacts__label form-contacts__label--tel" for="tel">Телефон:<sup>*</sup></label>
-                    <input class="form-contacts__input" id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90" required>
+                    <input class="form-contacts__input" id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90" required="">
                       <svg class="form-contacts__svg2" width="20" height="20"><use xlink:href="img/sprite.svg#phone"></use></svg>
                   </li>
                 </ul>
@@ -106,7 +110,7 @@
               <legend class="additionally__text">Дополнительно</legend>
                 <ul class="additionally__list">
                   <li class="additionally__item">
-                    <input class="visually-hidden" id="sugarfree" name="sugarfee" type="checkbox" checked aria-label="Сахарозаменитель">
+                    <input class="visually-hidden" id="sugarfree" name="sugarfee" type="checkbox" checked="" aria-label="Сахарозаменитель">
                     <label class="additionally__point" for="sugarfree">Сахарозаменитель</label>
                   </li>
                   <li class="additionally__item">
