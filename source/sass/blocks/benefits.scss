@@ -1,3 +1,8 @@
+.benefits {
+  margin: 0 auto;
+  width: 320px;
+}
+
 .benefits__title {
   position: relative;
   margin-top: 29px;
@@ -127,6 +132,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .benefits {
+    margin: 0 auto;
+    width: 768px;
+  }
+
   .benefits__title {
     position: relative;
     margin-top: 66px;
@@ -288,6 +298,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .benefits {
+    width: 1300px;
+  }
+
   .benefits__title {
     position: relative;
     margin-top: 17px;
