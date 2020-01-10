@@ -194,17 +194,25 @@
     width: 300px;
   }
 
+  .benefits__point-wrapper {
+    border: 1px solid lightgrey;
+  }
+
   .benefits__point {
-    margin-left: 38px;
-    max-width: 633px;
-    border: none;
+    padding: 10px 38px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .benefits__point:last-child {
+    border: 0;
   }
 
   .benefits__clench {
-    padding-top: 8px;
+    padding-top: 0;
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    width: 100%;
   }
 
   .benefits__table {
@@ -236,7 +244,7 @@
   .benefits-row__button {
     width: 100%;
     margin-top: 9px;
-    margin-bottom: 39px;
+    margin-bottom: 25px;
   }
 
   .benefits-row__button:hover,
@@ -255,7 +263,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 98px;
+    margin-top: 63px;
     margin-bottom: 74px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     min-height: 200px;
@@ -305,7 +313,7 @@
   .benefits__title {
     position: relative;
     margin-top: 17px;
-    margin-bottom: 91px;
+    margin-bottom: 88px;
     padding-right: 30px;
     padding-left: 39px;
     font-size: 36px;
@@ -335,18 +343,28 @@
   }
 
   .benefits__point {
+    padding: 0;
     margin-left: 0;
     display: flex;
     border-bottom: 1px solid lightgray;
   }
 
+  .benefits__point:nth-child(1) {
+    border-top: 1px solid lightgrey;
+  }
+
+  .benefits__point:last-child {
+    border-bottom: 1px solid lightgray;
+  }
+
   .benefits__envelope {
     display: flex;
-    margin-bottom: 59px;
+    justify-content: space-between;
+    margin-bottom: 78px;
   }
 
   .benefits__point-wrapper {
-    width: 100%;
+    border: none;
   }
 
   .benefits-row__title {
