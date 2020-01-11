@@ -112,7 +112,7 @@
 .options__catalog:hover::after,
 .options__catalog:focus::after {
   top: 7px;
-  left: 117px;
+  left: 107px;
   width: 33px;
   height: 20px;
   background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -125,7 +125,7 @@
 
 .options__catalog:active::after {
   top: 7px;
-  left: 117px;
+  left: 107px;
   width: 33px;
   height: 20px;
   background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -156,7 +156,7 @@
 .options__catalogpro:hover::after,
 .options__catalogpro:focus::after {
   top: 6px;
-  left: 114px;
+  left: 105px;
   width: 33px;
   height: 20px;
   background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -169,7 +169,7 @@
 
 .options__catalogpro:active::after {
   top: 6px;
-  left: 114px;
+  left: 105px;
   width: 33px;
   height: 20px;
   background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -270,6 +270,7 @@
   .options__catalog {
     position: relative;
     padding-left: 43px;
+    padding-bottom: 50px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
@@ -287,11 +288,10 @@
     background-repeat: no-repeat;
   }
 
-
   .options__catalog:hover::after,
   .options__catalog:focus::after {
     top: 10px;
-    left: 183px;
+    left: 173px;
     width: 33px;
     height: 20px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -304,7 +304,7 @@
 
   .options__catalog:active::after {
     top: 10px;
-    left: 183px;
+    left: 173px;
     width: 33px;
     height: 20px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -335,7 +335,7 @@
   .options__catalogpro:hover::after,
   .options__catalogpro:focus::after {
     top: 9px;
-    left: 178px;
+    left: 168px;
     width: 33px;
     height: 20px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -348,7 +348,7 @@
 
   .options__catalogpro:active::after {
     top: 9px;
-    left: 178px;
+    left: 168px;
     width: 33px;
     height: 20px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -451,6 +451,7 @@
   .options__catalog {
     position: relative;
     padding-left: 42px;
+    padding-bottom: 50px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
@@ -471,7 +472,7 @@
   .options__catalog:hover::after,
   .options__catalog:focus::after {
     top: 9px;
-    left: 183px;
+    left: 173px;
     width: 33px;
     height: 20px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -483,8 +484,8 @@
   }
 
   .options__catalog:active::after {
-    top: 7px;
-    left: 183px;
+    top: 9px;
+    left: 173px;
     width: 33px;
     height: 20px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -514,8 +515,8 @@
 
   .options__catalogpro:hover::after,
   .options__catalogpro:focus::after {
-    top: 8px;
-    left: 178px;
+    top: 10px;
+    left: 168px;
     width: 33px;
     height: 20px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -527,8 +528,8 @@
   }
 
   .options__catalogpro:active::after {
-    top: 8px;
-    left: 178px;
+    top: 10px;
+    left: 168px;
     width: 33px;
     height: 20px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
