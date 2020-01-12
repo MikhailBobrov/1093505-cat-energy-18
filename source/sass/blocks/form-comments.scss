@@ -36,6 +36,13 @@
   min-height: 150px;
   border: 1px solid #cdcdcd;
   opacity: 0.5;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $link-color;
+  }
 }
 
 @media (min-width: $tablet-width) {

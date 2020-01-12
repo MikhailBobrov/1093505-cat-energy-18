@@ -45,7 +45,25 @@
   height: 44px;
   border: 1px solid #cdcdcd;
   opacity: 0.5;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $link-color;
+  }
 }
+
+.form-list__input:not(:placeholder-shown):invalid {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #e74246;
+  color: #e74246;
+}
+
 
 @media (min-width: $tablet-width) {
   .form-list__wrapper {

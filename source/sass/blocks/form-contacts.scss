@@ -51,7 +51,8 @@
   height: 13px;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:active {
     fill: #65a93c;
   }
 
@@ -73,7 +74,8 @@
   height: 20px;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:active {
     fill: #65a93c;
   }
 
@@ -104,6 +106,13 @@
   height: 45px;
   border: 1px solid #cdcdcd;
   opacity: 0.5;
+}
+
+.form-contacts__input:hover,
+.form-contacts__input:focus {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid $link-color;
 }
 
 .form-contacts__label--email {
@@ -188,7 +197,8 @@
     height: 13px;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:active {
       fill: #65a93c;
     }
 
@@ -210,7 +220,8 @@
     height: 20px;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:active {
       fill: #65a93c;
     }
 
@@ -221,7 +232,6 @@
 
   .form-contacts__input:hover,
   .form-contacts__input:focus {
-    font: inherit;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid $link-color;
@@ -329,7 +339,8 @@
     height: 13px;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:active {
       fill: #65a93c;
     }
 
@@ -351,7 +362,8 @@
     height: 20px;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:active {
       fill: #65a93c;
     }
 
@@ -362,7 +374,6 @@
 
   .form-contacts__input:hover,
   .form-contacts__input:focus {
-    font: inherit;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid $link-color;
