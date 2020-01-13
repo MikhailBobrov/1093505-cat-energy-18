@@ -1,4 +1,4 @@
-.social__list {
+.social {
   @include reset;
   position: relative;
   display: flex;
@@ -8,7 +8,7 @@
   width: 125px;
 }
 
-.social__list::before {
+.social::before {
   content: "";
   position: absolute;
   top: -1px;
@@ -19,7 +19,7 @@
   background-color: $link-color;
 }
 
-.social__list::after {
+.social::after {
   content: "";
   position: absolute;
   top: 62px;
@@ -69,7 +69,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social__list {
+  .social {
     @include reset;
     position: relative;
     display: flex;
@@ -80,11 +80,11 @@
     width: 219px;
   }
 
-  .social__list::before {
+  .social::before {
     display: none;
   }
 
-  .social__list::after {
+  .social::after {
     display: none;
   }
 
@@ -128,7 +128,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .social__list {
+  .social {
     @include reset;
     position: relative;
     display: flex;
@@ -139,11 +139,11 @@
     width: 125px;
   }
 
-  .social__list::before {
+  .social::before {
     display: none;
   }
 
-  .social__list::after {
+  .social::after {
     display: none;
   }
 

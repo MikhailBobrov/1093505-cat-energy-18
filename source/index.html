@@ -22,9 +22,9 @@
                 </a>
               </div>
               <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--white"><a class="site-list__item--link">Главная</a></li>  <!--здесь на таблет не знаю как подчеркивание сделать нижнее-->
-                <li class="site-list__item"><a class="site-list__item--link" href="catalog.html">Каталог продукции</a></li>
-                <li class="site-list__item"><a class="site-list__item--link" href="form.html">Подбор программы</a></li>
+                <li class="site-list__item site-list__item--white"><a class="site-list__link">Главная</a></li>  <!--здесь на таблет не знаю как подчеркивание сделать нижнее-->
+                <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
+                <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
               </ul>
             </div>
         </nav>
@@ -101,11 +101,25 @@
 
           <div class="example__filter">
             <div class="example__images"> <!--у меня есть example-images в которых два дива - в них вде пиктуре - каждой обертке будет свойство overflow - где то будет hidden (более существенно будет для верхней) - видс и хейт (задай background) + война с градиентом -->
-              <div class="example__item example__item--before">
-                <div class="example__item--fat"></div>
+              <div class="example__item-before">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="example__fat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="рис">
+                </picture>
               </div>
-              <div class="example__item example__item--after">
-                <div class="example__item--thin"></div>
+              <div class="example__item-after">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="example__thin" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="рис">
+                </picture>
               </div>
             </div>
 
@@ -149,20 +163,20 @@
           </picture>
         </a>
 
-        <ul class="social__list">
+        <ul class="social">
           <li class="social__item">
-            <a class="social__link " href="#">
-              <svg class="social__link--vkontakte"><use xlink:href="img/sprite.svg#icon-vk"></use> </svg><span class="visually-hidden">Мы в Вконтакте</span>
+            <a href="#">
+              <svg class="social__link social__link--vkontakte"><use xlink:href="img/sprite.svg#icon-vk"></use> </svg><span class="visually-hidden">Мы в Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__link--instagram"><use xlink:href="img/sprite.svg#icon-insta"></use> </svg><span class="visually-hidden">Мы в Инстаграме</span>
+            <a href="#">
+              <svg class="social__link social__link--instagram"><use xlink:href="img/sprite.svg#icon-insta"></use> </svg><span class="visually-hidden">Мы в Инстаграме</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link " href="#">
-              <svg class="social__link--facebook"><use xlink:href="img/sprite.svg#icon-fb"></use></svg> <span class="visually-hidden">Мы в Фейсбуке</span></a>
+            <a href="#">
+              <svg class="social__link social__link--facebook"><use xlink:href="img/sprite.svg#icon-fb"></use></svg> <span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
         </ul>
 

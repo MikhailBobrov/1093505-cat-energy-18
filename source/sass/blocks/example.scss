@@ -114,11 +114,9 @@
   margin-bottom: 35px;
 }
 
-.example__item--before {
-  overflow: hidden;
-}
-
-.example__item--fat::before {
+/*это закоментировал чтобы попробовать сделать котов - так было изначально*/
+/*
+.example__fat::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -135,7 +133,7 @@
   }
 }
 
-.example__item--thin::after {
+.example__thin::after {
   content: "";
   position: absolute;
   top: 28px;
@@ -150,6 +148,42 @@
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/after-mobile@2x.png");
   }
+}
+
+ */
+
+.example__item-before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -19px;
+  z-index: 1;
+  overflow: hidden;
+  width: 320px;
+  background-color: #f2f2f2;
+}
+
+.example__fat {
+  max-width: 318px;
+  height: 239px;
+  background-size: 318px;
+  background-color: #f2f2f2;
+  //overflow: hidden;
+}
+
+.example__item-after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 27px;
+  z-index: 0;
+  width: 251px;
+}
+
+.example__thin {
+  height: 240px;
+  max-width: 100%;
+  background-size: 280px;
 }
 
 .example__slider {
@@ -383,13 +417,15 @@ n
     z-index: -3;
   }
  */
-  .example__item--fat { //костыли((((
+  /*
+  .example__fat { //костыли((((
     width: 353px;
     height: 220px;
     background-color: $fancy-color;
   }
 
-  .example__item--fat::before {
+  /*
+  .example__fat::before {
     content: "";
     position: absolute;
     top: 49px;
@@ -406,13 +442,12 @@ n
     }
   }
 
-  .example__item--thin::after {
+  .example__thin::after {
     content: "";
     position: absolute;
     top: 50px;
     left: 18px;
     z-index: -1;
-    /* Style for "after-desk" */
     width: 545px;
     height: 517px;
     background-image: url("../img/after-tablet@1x.png");
@@ -424,22 +459,42 @@ n
     }
   }
 
-  /*.example__item:nth-child(1) {
-    display: block;
-  }
-  n
    */
 
-  /*
-  .example__controls {
-    width: 84px;
-    height: 14px;
-    border-radius: 6px;
-    border: 1px solid #cdcdcd;
-    background-color: #ffffff;
+  .example__item-before {
+    content: "";
+    position: absolute;
+    top: 51px;
+    left: 16px;
+    z-index: 1;
+    overflow: hidden;
+    width: 338px;
+    background: linear-gradient(to top, #f2f2f2 67.5%, #ffffff 10%);//костыли
+    //background-color: $fancy-color;
   }
 
-   */
+  .example__fat {
+    max-width: 689px;
+    height: 517px;
+    background-size: 318px;
+    background-color: transparent;
+  }
+
+  .example__item-after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 34px;
+    z-index: 0;
+    width: 251px;
+  }
+
+  .example__thin {
+    max-width: 658px;
+    height: 517px;
+    background-size: 280px;
+
+  }
 
   .example__controls {
     display: flex;
@@ -516,6 +571,7 @@ n
     border: none;
 
     &::before {
+      display: none;
       content: "";
       position: absolute;
       width: 100%;
@@ -654,45 +710,37 @@ n
 
    */
 
-  .example__item--fat { //костыли((((
-    width: 494px;
-    height: 125px;
-    background-color: tomato;
-  }
-
-  .example__item--fat::before {
+  .example__item-before {
     content: "";
     position: absolute;
-    top: -12px;
-    left: 135px;
-    z-index: 2;
-    width: 364px;
-    height: 499px;
-    background-image: url("../img/before-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-size: 689px;
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/before-desktop@2x.png");
-    }
+    top: -14px;
+    left: 133px;
+    z-index: 1;
+    overflow: hidden;
+    width: 366px;
+    background-color: $fancy-color;
   }
 
-  .example__item--thin::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 138px;
-    z-index: -1;
-    /* Style for "after-desk" */
-    width: 545px;
+  .example__fat {
+    max-width: 689px;
     height: 517px;
-    background-image: url("../img/after-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-size: 685px;
+    background-size: 318px;
+    background-color: transparent;
+  }
 
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/after-desktop@2x.png");
-    }
+  .example__item-after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 154px;
+    z-index: 0;
+    width: 251px;
+  }
+
+  .example__thin {
+    max-width: 658px;
+    height: 517px;
+    background-size: 280px;
   }
 
   /*.example__item:nth-child(1) {
