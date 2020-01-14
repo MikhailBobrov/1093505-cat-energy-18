@@ -1,19 +1,6 @@
 .example {
   position: relative;
   background-color: #f2f2f2;
-
-  /*&::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 705px;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-color: #f2f2f2;
-    z-index: -3;
-  }
-
-   */
 }
 
 .example__point {
@@ -117,44 +104,6 @@
   margin-bottom: 35px;
 }
 
-/*это закоментировал чтобы попробовать сделать котов - так было изначально*/
-/*
-.example__fat::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: -19px;
-  z-index: 1;
-  width: 311px;
-  height: 232px;
-  background-image: url("../img/before-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: 318px;
-
-  @media (min-resolution: $retina-dppx) {
-    background-image: url("../img/before-mobile@2x.png");
-  }
-}
-
-.example__thin::after {
-  content: "";
-  position: absolute;
-  top: 28px;
-  left: 13px;
-  z-index: 0;
-  width: 251px;
-  height: 240px;
-  background-image: url("../img/after-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: 280px;
-
-  @media (min-resolution: $retina-dppx) {
-    background-image: url("../img/after-mobile@2x.png");
-  }
-}
-
- */
-
 .example__item-before {
   content: "";
   position: absolute;
@@ -217,26 +166,7 @@
   background: #232528;
   box-shadow: inset 0 1px 0 0 lightgrey, inset 0 -1px 0 0 lightgrey;
   outline: none;
-
-  /*-webkit-box-shadow: inset 0 1px 0 0 lightgrey, inset 0 -1px 0 0 lightgrey;
-  /* no focus outline */
 }
-/*.example__item:nth-child(1) {
-  display: block;
-}
-n
- */
-
-/*
-.example__controls {
-  width: 84px;
-  height: 14px;
-  border-radius: 6px;
-  border: 1px solid #cdcdcd;
-  background-color: #ffffff;
-}
-
- */
 
 .example__controls {
   display: flex;
@@ -257,19 +187,6 @@ n
   background-color: inherit;
 }
 
-/*
-.example__was::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 48px;
-  right: 18px;
-  width: 86px;
-  background-image: url("../img/before-mobile@1x.png");
-}
-
- */
-
 .example__become {
   margin-right: 7px;
   font-size: 16px;
@@ -285,20 +202,7 @@ n
     position: relative;
     border-top: 1px solid lightgrey;
     margin-top: 102px;
-    background: linear-gradient(to top, #f2f2f2 42.5%, #ffffff 10%);//костыли
-
-    /*&::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1081px;
-      //background-position: 50% 0;
-      //background-repeat: no-repeat;
-      background: linear-gradient(to top, #f2f2f2 42.5%, #ffffff 10%);
-      z-index: -3;
-    }
-
-     */
+    background: linear-gradient(to top, #f2f2f2 42.5%, #ffffff 10%);
   }
 
   .example__point {
@@ -415,57 +319,6 @@ n
     padding: 0;
     margin-bottom: 35px;
   }
-  /*
-  .example__item--before {
-    height: 500px;
-    overflow: hidden;
-    background: linear-gradient(to top, #f2f2f2 42%, #ffffff 10%);
-    z-index: -3;
-  }
- */
-  /*
-  .example__fat { //костыли((((
-    width: 353px;
-    height: 220px;
-    background-color: $fancy-color;
-  }
-
-  /*
-  .example__fat::before {
-    content: "";
-    position: absolute;
-    top: 49px;
-    left: 16px;
-    z-index: 2;
-    width: 337px;
-    height: 499px;
-    background-image: url("../img/before-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-size: 689px;
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/before-tablet@2x.png");
-    }
-  }
-
-  .example__thin::after {
-    content: "";
-    position: absolute;
-    top: 50px;
-    left: 18px;
-    z-index: -1;
-    width: 545px;
-    height: 517px;
-    background-image: url("../img/after-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-size: 685px;
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/after-tablet@2x.png");
-    }
-  }
-
-   */
 
   .example__item-before {
     content: "";
@@ -505,45 +358,6 @@ n
     z-index: 2;
   }
 
-  .example__controls {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 83px;
-    padding-bottom: 48px;
-    z-index: 2;
-  }
-
-  .example__was {
-    position: relative;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    z-index: 2;
-  }
-
-  /*
-  .example__was::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 48px;
-    right: 18px;
-    width: 86px;
-    background-image: url("../img/before-mobile@1x.png");
-  }
-
-   */
-
-  .example__become {
-    position: relative;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    z-index: 2;
-  }
-
   .example__slider {
     position: relative;
     margin-top: 3px;
@@ -573,7 +387,33 @@ n
     background: #232528;
     box-shadow: inset 0 1px 0 0 lightgrey, inset 0 -1px 0 0 lightgrey;
     //-webkit-box-shadow: inset 0 1px 0 0 lightgrey, inset 0 -1px 0 0 lightgrey;
-    outline: none; /* no focus outline */
+    outline: none;
+  }
+
+  .example__controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 83px;
+    padding-bottom: 48px;
+    z-index: 2;
+  }
+
+  .example__was {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  .example__become {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    z-index: 2;
   }
 }
 
@@ -713,15 +553,6 @@ n
     padding: 0;
     margin-bottom: 35px;
   }
-  /*
-    .example__item--before {
-      height: 500px;
-      overflow: hidden;
-      background: linear-gradient(to top, #f2f2f2 42%, #ffffff 10%);
-      z-index: -3;
-    }
-
-   */
 
   .example__item-before {
     content: "";
@@ -756,23 +587,6 @@ n
     background-size: 280px;
   }
 
-  /*.example__item:nth-child(1) {
-    display: block;
-  }
-  n
-   */
-
-  /*
-  .example__controls {
-    width: 84px;
-    height: 14px;
-    border-radius: 6px;
-    border: 1px solid #cdcdcd;
-    background-color: #ffffff;
-  }
-
-   */
-
   .example__controls {
     display: flex;
     justify-content: space-around;
@@ -787,19 +601,6 @@ n
     line-height: 20px;
     text-transform: uppercase;
   }
-
-  /*
-  .example__was::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 48px;
-    right: 18px;
-    width: 86px;
-    background-image: url("../img/before-mobile@1x.png");
-  }
-
-   */
 
   .example__become {
     position: relative;
@@ -837,6 +638,6 @@ n
     background: #232528;
     box-shadow: inset 0 1px 0 0 lightgrey, inset 0 -1px 0 0 lightgrey;
     //-webkit-box-shadow: inset 0 1px 0 0 lightgrey, inset 0 -1px 0 0 lightgrey;
-    outline: none; /* no focus outline */
+    outline: none;
   }
 }
