@@ -88,7 +88,7 @@
   }
 
   .range {
-    margin: 0 12px;
+    margin: 0 0;
     padding: 0;
     width: 428px;
     min-width: 429px;
@@ -155,6 +155,6 @@
 
 @media (min-width: $desktop-width) {
   .range {
-    margin: 0 13px;
+    margin: 0 0;
   }
 }

@@ -104,6 +104,19 @@
     border: 1px solid #cdcdcd;
     opacity: 0.5;
   }
+
+  .form-comments__textarea:hover,
+  .form-comments__textarea:active {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $link-color;
+  }
+
+  .form-comments__textarea:not(:placeholder-shown):invalid {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ff8282;
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -56,15 +56,6 @@
   }
 }
 
-.form-list__input:not(:placeholder-shown):invalid {
-  font: inherit;
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid #e74246;
-  color: #e74246;
-}
-
-
 @media (min-width: $tablet-width) {
   .form-list__wrapper {
     margin-top: 54px;
@@ -120,6 +111,20 @@
     min-height: 49px;
     border: 1px solid #cdcdcd;
     opacity: 0.5;
+  }
+
+  .form-list__input:hover,
+  .form-list__input:active {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $link-color;
+  }
+
+  .form-list__input:not(:placeholder-shown):invalid {
+    //font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ff8282;
   }
 }
 
@@ -186,5 +191,12 @@
     height: 52px;
     border: 1px solid #cdcdcd;
     opacity: 0.5;
+  }
+
+  .form-list__input:hover,
+  .form-list__input:active {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $link-color;
   }
 }

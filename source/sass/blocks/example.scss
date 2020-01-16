@@ -403,23 +403,52 @@
   }
 
   .example__was {
-    padding-left: 0;
-    padding-right: 12px;
     position: relative;
+    padding-right: 0;
+    margin-right: 21px;
+    padding-left: 0;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
     z-index: 2;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid grey;
+      outline: none;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   .example__become {
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 22px;
+    width: 52px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
     z-index: 2;
+    border-bottom: 1px dotted grey;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid grey;
+      outline: none;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
@@ -593,18 +622,51 @@
 
   .example__was {
     position: relative;
+    padding-right: 0;
+    margin-right: 21px;
+    padding-left: 0;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
+    z-index: 2;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid grey;
+      outline: none;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   .example__become {
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 22px;
+    width: 52px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
+    z-index: 2;
+    border-bottom: 1px dotted grey;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid grey;
+      outline: none;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   /*

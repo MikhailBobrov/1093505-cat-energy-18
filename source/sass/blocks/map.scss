@@ -150,18 +150,18 @@
 
   .map__contacts {
     position: absolute;
-    top: 78px;
+    top: 95px;
     left: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 570px;
-    min-height: 201px;
+    height: 201px;
     background-color: $fancy-color;
   }
 
   .map__slogan {
-    margin-top: 67px;
+    margin-top: 49px;
     padding-left: 76px;
     max-width: 235px;
     min-height: 70px;
@@ -172,7 +172,7 @@
   }
 
   .map__adress {
-    margin-top: 65px;
+    margin-top: 47px;
     padding-right: 90px;
     max-width: 250px;
     min-height: 70px;

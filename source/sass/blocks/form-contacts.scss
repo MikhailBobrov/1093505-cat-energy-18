@@ -237,6 +237,12 @@
     border: 2px solid $link-color;
   }
 
+  .form-contacts__input:not(:placeholder-shown):invalid {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ff8282;
+  }
+
   .form-contacts__label {
     color: #222222;
     font-size: 20px;
