@@ -1,12 +1,22 @@
+.catalog .map {
+  background-color: #f2f2f2;
+}
+
+.form .map {
+  background-color: #f2f2f2;
+}
+
 .map__container {
   min-height: 362px;
   background-image: url("../img/map_23.png");
   background-repeat: no-repeat;
+  border: none;
 }
 
 .map__iframe {
   width: 100%;
   min-height: 362px;
+  border: 0;
 }
 
 .map__block {
@@ -18,10 +28,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 16px;
+  padding-top: 16px;
   margin-bottom: 8px;
   //min-height: 114px;
   background-color: $fancy-color;
+}
+
+.catalog .map__contacts {
+  background-color: #f2f2f2;
+}
+
+.form .map__contacts {
+  background-color: #f2f2f2;
 }
 
 .map__slogan {
@@ -45,7 +63,7 @@
 
 @media (min-width: $tablet-width) {
   .map {
-    background-color: #f2f2f2;
+    background-color: $fancy-color;
   }
 
   .map__container {
@@ -68,12 +86,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 16px;
     min-height: 114px;
-    background-color: #f2f2f2;
+    background-color: $fancy-color;
   }
 
   .map__slogan {
-    margin-top: 68px;
+    margin-top: 50px;
     padding-left: 41px;
     max-width: 211px;
     min-height: 70px;
@@ -84,7 +103,7 @@
   }
 
   .map__adress {
-    margin-top: 68px;
+    margin-top: 50px;
     padding-right: 42px;
     max-width: 250px;
     min-height: 70px;
@@ -105,6 +124,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog .map__contacts {
+    background-color: $fancy-color;
+  }
+
+  .form .map__contacts {
+    background-color: $fancy-color;
+  }
+
   .map__container {
     min-height: 400px;
     background-image: url("../img/map_desktop.png");
@@ -123,18 +150,18 @@
 
   .map__contacts {
     position: absolute;
-    top: 78px;
+    top: 95px;
     left: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 570px;
-    min-height: 201px;
+    height: 201px;
     background-color: $fancy-color;
   }
 
   .map__slogan {
-    margin-top: 67px;
+    margin-top: 49px;
     padding-left: 76px;
     max-width: 235px;
     min-height: 70px;
@@ -145,7 +172,7 @@
   }
 
   .map__adress {
-    margin-top: 65px;
+    margin-top: 47px;
     padding-right: 90px;
     max-width: 250px;
     min-height: 70px;

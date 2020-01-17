@@ -97,7 +97,7 @@
 
   .main-title__wrapper {
     position: relative;
-    min-height: 283px;
+    min-height: 0;
     background-image: none;
   }
 
@@ -168,7 +168,7 @@
       right: 0;
       top: 0;
       width: 50%;
-      height: 700px;
+      height: 697px;
       background-position: right -70px bottom;
       background-repeat: no-repeat;
       background-color: #65a93c;
@@ -234,7 +234,7 @@
   }
 
   .main-title__button {
-    margin-top: 31px;
+    margin-top: 32px;
     margin-left: 79px;
     width: 245px;
     min-height: 52px;

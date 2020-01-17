@@ -36,6 +36,13 @@
   min-height: 150px;
   border: 1px solid #cdcdcd;
   opacity: 0.5;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $link-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -96,6 +103,19 @@
     min-height: 174px;
     border: 1px solid #cdcdcd;
     opacity: 0.5;
+  }
+
+  .form-comments__textarea:hover,
+  .form-comments__textarea:active {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $link-color;
+  }
+
+  .form-comments__textarea:not(:placeholder-shown):invalid {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ff8282;
   }
 }
 

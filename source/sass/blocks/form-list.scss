@@ -45,6 +45,15 @@
   height: 44px;
   border: 1px solid #cdcdcd;
   opacity: 0.5;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $link-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -91,17 +100,31 @@
   .form-list__input {
     width: 100%;
     margin-bottom: 15px;
-    padding-top: 2px;
+    padding-top: 4px;
     padding-bottom: 10px;
-    padding-left: 15px;
+    padding-left: 17px;
     color: #444444;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
-    height: 52px;
+    min-height: 49px;
     border: 1px solid #cdcdcd;
     opacity: 0.5;
+  }
+
+  .form-list__input:hover,
+  .form-list__input:active {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $link-color;
+  }
+
+  .form-list__input:not(:placeholder-shown):invalid {
+    //font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ff8282;
   }
 }
 
@@ -168,5 +191,12 @@
     height: 52px;
     border: 1px solid #cdcdcd;
     opacity: 0.5;
+  }
+
+  .form-list__input:hover,
+  .form-list__input:active {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $link-color;
   }
 }
