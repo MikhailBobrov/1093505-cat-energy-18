@@ -39,9 +39,9 @@
   border: 1px solid #bababa;
 }
 
-.radio-item__style:focus {
+.radio-item__input:focus + .radio-item__style::before {
   outline: none;
-  box-shadow: 0 0 0 2px tomato;
+  box-shadow: 0 0 0 2px cornflowerblue;
 }
 
 .radio-item__style::after {
