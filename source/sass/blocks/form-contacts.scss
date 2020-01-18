@@ -50,15 +50,6 @@
   width: 17px;
   height: 13px;
   cursor: pointer;
-
-  &:hover,
-  &:active {
-    fill: #65a93c;
-  }
-
-  &:invalid {
-    fill: #ff8282;
-  }
 }
 
 .form-contacts__point--tel {
@@ -73,15 +64,6 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-
-  &:hover,
-  &:active {
-    fill: #65a93c;
-  }
-
-  &:invalid {
-    fill: #ff8282;
-  }
 }
 
 .form-contacts__label {
@@ -113,6 +95,25 @@
   cursor: pointer;
   background-color: transparent;
   border: 2px solid $link-color;
+}
+
+.form-contacts__input:focus + .form-contacts__svg1,
+.form-contacts__input:focus + .form-contacts__svg2 {
+  fill: #65a93c;
+}
+
+.form-contacts__input:not(:placeholder-shown):invalid + .form-contacts__svg1,
+.form-contacts__input:not(:placeholder-shown):invalid + .form-contacts__svg2,
+.form-contacts__input--error + .form-contacts__svg1,
+.form-contacts__input--error + .form-contacts__svg2 {
+  fill: #ff8282;
+}
+
+.form-contacts__input:not(:placeholder-shown):invalid,
+.form-contacts__input--error {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #ff8282;
 }
 
 .form-contacts__label--email {
@@ -237,10 +238,11 @@
     border: 2px solid $link-color;
   }
 
-  .form-contacts__input:not(:placeholder-shown):invalid {
+  .form-contacts__input:not(:placeholder-shown):invalid,
+  .form-contacts__input--error {
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #ff8282;
+    border: 2px solid red;
   }
 
   .form-contacts__label {
@@ -314,7 +316,19 @@
   }
 
   .form-contacts__data::before {
-    display: none;
+    position: absolute;
+    content: "";
+    //display: inline-block;
+    // vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    top: 50px;
+    left: -40px;
+    height: 3px;
+    background-color: #5eaa2f;
+    //border: solid $fancy-color;
+    //border-width: 0 22px;
+    margin-left: -100%;
   }
 
   .form-contacts__wrapper {

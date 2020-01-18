@@ -66,6 +66,11 @@
   border: 1px solid #bababa;
 }
 
+.additionally__input:focus + .additionally__point::before {
+  outline: none;
+  box-shadow: 0 0 0 2px cornflowerblue;
+}
+
 .additionally__point::after {
   content: "";
   position: absolute;
@@ -255,7 +260,19 @@
   }
 
   .additionally__text::before {
-    display: none;
+    position: absolute;
+    content: "";
+    //display: inline-block;
+    // vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    top: 22px;
+    left: -40px;
+    height: 3px;
+    background-color: #5eaa2f;
+    //border: solid $fancy-color;
+    //border-width: 0 22px;
+    margin-left: -100%;
   }
 
   .additionally__item {
