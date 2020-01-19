@@ -68,6 +68,16 @@
   opacity: 0.5;
 }
 
+.social__item a:hover,
+.social__item a:focus {
+  fill: #65a93c;
+}
+
+.social__item a:active {
+  fill: #65a93c;
+  opacity: 0.5;
+}
+
 @media (min-width: $tablet-width) {
   .social {
     @include reset;

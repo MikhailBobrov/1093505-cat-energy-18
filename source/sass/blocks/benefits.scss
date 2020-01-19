@@ -76,10 +76,11 @@
   justify-content: center;
   align-items: flex-end;
   margin-top: 40px;
-  margin-bottom: 16px;
+  margin-bottom: 33px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
-  min-height: 305px;
+  min-height: 289px;
   background-repeat: no-repeat;
+  background-color: #65a93c;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
@@ -88,7 +89,7 @@
 
 .benefits-call__items--image {
   position: relative;
-  background-color: $fancy-color;
+  //background-color: $fancy-color;
   background-size: contain;
 }
 
@@ -105,7 +106,7 @@
 }
 
 .benefits-call__subtitle {
-  margin-bottom: 58px;
+  margin-bottom: 42px;
   width: 163px;
   text-align: center;
   font-size: 16px;
@@ -269,6 +270,7 @@
     min-height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #65a93c;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
@@ -277,7 +279,7 @@
 
   .benefits-call__items--image {
     position: relative;
-    background-color: $fancy-color;
+    //background-color: $fancy-color;
   }
 
   .benefits-call__items--image::before {
@@ -427,7 +429,7 @@
   }
 
   .benefits-row__button {
-    //width: 100%;
+    width: 245px;
     min-width: 245px;
     margin-top: 9px;
     margin-bottom: 22px;
@@ -456,6 +458,7 @@
     min-height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #65a93c;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
@@ -464,7 +467,7 @@
 
   .benefits-call__items--image {
     position: relative;
-    background-color: $fancy-color;
+    //background-color: $fancy-color;
   }
 
   .benefits-call__items--image::before {

@@ -22,6 +22,10 @@
   }
 }
 
+.copyright__link:focus + .copyright__span:focus {
+  fill: #65a93c;
+}
+
 .copyright__link {
   display: flex;
   flex-direction: row;
