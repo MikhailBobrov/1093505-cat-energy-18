@@ -607,7 +607,7 @@
     }
 
     &:active {
-      border-bottom: none;
+      border-bottom: 1px solid transparent;
     }
   }
 
@@ -632,7 +632,7 @@
     }
 
     &:active {
-      border-bottom: none;
+      border-bottom: 1px solid transparent;
     }
   }
 

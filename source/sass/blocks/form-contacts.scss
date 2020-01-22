@@ -92,6 +92,9 @@
 
 .form-contacts__input:hover,
 .form-contacts__input:focus {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 13px;
   cursor: pointer;
   background-color: transparent;
   border: 2px solid $link-color;
@@ -233,6 +236,9 @@
 
   .form-contacts__input:hover,
   .form-contacts__input:focus {
+    padding-top: 13px;
+    padding-bottom: 14px;
+    padding-left: 19px;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid $link-color;

@@ -50,6 +50,9 @@
 
   &:hover,
   &:active {
+    padding-top: 11px;
+    padding-bottom: 9px;
+    padding-left: 14px;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid $link-color;
@@ -115,6 +118,9 @@
 
   .form-list__input:hover,
   .form-list__input:active {
+    padding-top: 3px;
+    padding-bottom: 9px;
+    padding-left: 16px;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid $link-color;
@@ -195,6 +201,9 @@
 
   .form-list__input:hover,
   .form-list__input:active {
+    padding-top: 1px;
+    padding-bottom: 9px;
+    padding-left: 16px;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid $link-color;

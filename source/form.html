@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
@@ -89,7 +91,7 @@
                   </li>
                   <li class="form-contacts__point form-contacts__point--tel">
                     <label class="form-contacts__label form-contacts__label--tel" for="tel">Телефон:<sup>*</sup></label>
-                    <input class="form-contacts__input" id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90" required="">
+                    <input class="form-contacts__input" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required="">
                       <svg class="form-contacts__svg2" width="20" height="20"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
                   </li>
                 </ul>
@@ -130,7 +132,7 @@
           <div class="form-list__message send-message">
             <div class="send-message__wrapper">
               <p class="send-message__item">
-                <a class="send-message__button button" href="">Отправить заявку</a>
+                <button type="submit" class="send-message__button button">Отправить заявку</button>
               </p>
               <p class="send-message__small">
                 <small class="send-message__legend send-message__legend--top">
@@ -146,10 +148,7 @@
       <section class="map">
         <div class="map__block container">
           <div class="map__contacts">
-            <p class="map__slogan">приглашаем<br>
-              к сотрудничеству
-              дилеров!
-            </p>
+            <p class="map__slogan">приглашаем к&nbsp;сотрудничеству дилеров!
             <p class="map__adress">ул. Большая<br> Конюшенная, д. 19/8
               <span class="map__adress map__adress--sp">Санкт-Петербург</span></p>
           </div>

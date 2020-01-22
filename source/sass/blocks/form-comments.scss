@@ -39,6 +39,9 @@
 
   &:hover,
   &:active {
+    padding-top: 13px;
+    padding-right: 11px;
+    padding-left: 13px;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid $link-color;
@@ -107,6 +110,9 @@
 
   .form-comments__textarea:hover,
   .form-comments__textarea:active {
+    padding-top: 9px;
+    padding-right: 11px;
+    padding-left: 17px;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid $link-color;
