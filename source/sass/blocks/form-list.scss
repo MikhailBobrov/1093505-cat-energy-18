@@ -48,6 +48,7 @@
   cursor: pointer;
   box-sizing: border-box;
 
+  &:focus,
   &:hover,
   &:active {
     padding-top: 11px;
@@ -116,6 +117,7 @@
     opacity: 0.5;
   }
 
+  .form-list__input:focus,
   .form-list__input:hover,
   .form-list__input:active {
     padding-top: 3px;
@@ -199,6 +201,7 @@
     opacity: 0.5;
   }
 
+  .form-list__input:focus,
   .form-list__input:hover,
   .form-list__input:active {
     padding-top: 1px;
